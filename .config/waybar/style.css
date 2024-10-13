@@ -1,0 +1,41 @@
+@import "colors.css";
+
+* {
+    background-color: transparent;
+    padding: 1px 5px;
+    font-family: "Cartograph CF";
+}
+
+#clock,
+#pulseaudio,
+#network,
+#backlight,
+#battery {
+    padding: 1px 10px;
+    border-radius: 8px;
+    background-color: @color8;
+}
+
+#workspaces {
+    padding: 3px 3px;
+    border-radius: 8px;
+    background-color: @color8;
+}
+
+#workspaces button.active {
+    background-color: @background;
+    border-radius: 8px;
+}
+
+tooltip {
+    border-radius: 8px;
+    background-color: @background;
+}
+
+tooltip label {
+    color: @foreground;
+}
+
+#workspaces button {
+    border-radius: 8px;
+}

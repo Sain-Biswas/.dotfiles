@@ -1,0 +1,16 @@
+{
+  "ui_font_size": 18,
+  "ui_font_family": "Cartograph CF",
+  "buffer_font_size": 18,
+  "buffer_font_family": "Cartograph CF",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
+  },
+  "terminal": {
+    "font_family": "FiraCode Nerd Font",
+    "font_size": 16,
+    "shell": "system"
+  }
+}

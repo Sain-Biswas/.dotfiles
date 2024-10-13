@@ -1,0 +1,26 @@
+{
+  "prefs": {
+    "ChangelogVersions": "{\"v0.2024.10.08.08.02.stable_01\":true,\"v0.2024.10.08.08.02.stable_02\":true}",
+    "SystemTheme": "false",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "CrashReportingEnabled": "true",
+    "LineHeightRatio": "1.0",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "ExperimentId": "0f6e0495-eea4-40b5-86d0-fbce2174a787",
+    "PreferLowPowerGPU": "false",
+    "AliasExpansionBannerSeen": "true",
+    "AgentModeOnboardingBlockShown": "true",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-10-18T08:17:10.245307Z\",\"is_unlimited\":false}",
+    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"BlockSelect\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"ThemePicker\"},{\"Hint\":\"CreateBlock\"}]",
+    "FontName": "\"FiraCode Nerd Font\"",
+    "NotebookFontSize": "14.0",
+    "AIRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-10-18T08:17:10.245307Z\",\"is_unlimited\":false}",
+    "SameLinePromptBlockState": "\"DoNotShow\"",
+    "FontSize": "12.0",
+    "TelemetryEnabled": "true",
+    "AliasExpansionEnabled": "true",
+    "AutosuggestionAcceptedCount": "2",
+    "Theme": "{\"Custom\":{\"name\":\"Pywal Personal\",\"path\":\"/home/sainbiswas/.local/share/warp-terminal/themes/pywal_personal.yml\"}}",
+    "OverrideOpacity": "50"
+  }
+}

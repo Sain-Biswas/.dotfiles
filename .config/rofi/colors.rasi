@@ -1,0 +1,12 @@
+* {
+    font:                        "Cartograph CF 12";
+    background:                  #38191e;
+    background-alt:              #7e676a;
+    foreground:                  #cdc5c6;
+    selected:                    #D6BAC5;
+    active:                      #E0A4A7;
+    urgent:                      #D08B93;
+    back-image-width:            url("/home/sainbiswas/.dotfiles/wallpapers/yae-miko-sakura.png", width);
+    back-image-height:           url("/home/sainbiswas/.dotfiles/wallpapers/yae-miko-sakura.png", height);
+    text:                        #FFFFFF;
+}

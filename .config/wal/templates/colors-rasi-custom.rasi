@@ -1,0 +1,12 @@
+* {{
+    font:                        "Cartograph CF 12";
+    background:                  {background};
+    background-alt:              {color8};
+    foreground:                  {foreground};
+    selected:                    {color5};
+    active:                      {color3};
+    urgent:                      {color1};
+    back-image-width:            url("{wallpaper}", width);
+    back-image-height:           url("{wallpaper}", height);
+    text:                        #FFFFFF;
+}}
