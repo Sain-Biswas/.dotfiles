@@ -21,7 +21,7 @@ cd src/paru
 cargo clean
 
 cd ~/Github
-git clone --detph=1 https://github.com/vinceliuice/Orchis-theme.git
+git clone --depth=1 https://github.com/vinceliuice/Orchis-theme.git
 cd Orchis-theme
 ./install.sh -t grey -c dark -s compact -i arch -l --tweaks primary macos submenu dock
 
