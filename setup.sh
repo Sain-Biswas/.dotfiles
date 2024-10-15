@@ -20,6 +20,14 @@ makepkg -si
 cd src/paru
 cargo clean
 
+cd ~/.dotfiles
+
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo pacman -Syy
+
 sudo pacman-key -r "linux-maintainers@warp.dev"
 sudo pacman-key --lsign-key "linux-maintainers@warp.dev"
 sudo sh -c "echo -e '\n[warpdotdev]\nServer = https://releases.warp.dev/linux/pacman/\$repo/\$arch' >> /etc/pacman.conf"
@@ -30,7 +38,7 @@ cd ~/.dotfiles
 
 paru -Rcns dolphin vim nano htop wofi polkit-kde-agent
 
-paru -Syy --needed chaotic-aur/android-studio bat chaotic-aur/brave-bin brightnessctl chromium clang cliphist dunst eslint fastfetch fzf gdb gnome-disk-utility go chaotic-aur/google-chrome grim chaotic-aur/grimblast-git hypridle hyprlock hyprpaper hyprpicker intellij-idea-community-edition kitty lldb loupe chaotic-aur/mongodb-compass nautilus neovim noto-fonts-emoji ntfs-3g nwg-look pavucontrol polkit-gnome chaotic-aur/profile-sync-daemon-brave python-pip python-pywal16 rofi-wayland rust rust-analyzer stow ttf-font-awesome unzip chaotic-aur/visual-studio-code-bin warp-terminal waybar xdg-user-dirs xorg-xwayland zed zoxide zsh
+paru -Syy --needed chaotic-aur/android-studio bat chaotic-aur/brave-bin brightnessctl chromium clang cliphist dunst eslint eza fastfetch fzf gdb gnome-disk-utility go chaotic-aur/google-chrome grim chaotic-aur/grimblast-git hypridle hyprlock hyprpaper hyprpicker intellij-idea-community-edition kitty lldb loupe chaotic-aur/mongodb-compass nautilus neovim noto-fonts-emoji ntfs-3g nwg-look pavucontrol polkit-gnome chaotic-aur/profile-sync-daemon-brave python-pip python-pywal16 rofi-wayland rust rust-analyzer stow ttf-font-awesome unzip chaotic-aur/visual-studio-code-bin warp-terminal waybar xdg-user-dirs xorg-xwayland zed zoxide zsh
 
 xdg-user-dirs-update
 

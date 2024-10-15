@@ -4,6 +4,7 @@
     background-color: transparent;
     padding: 1px 5px;
     font-family: "Cartograph CF";
+    color: @foreground;
 }
 
 #clock,

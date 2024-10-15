@@ -56,6 +56,24 @@ alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
 
+# Directory navigation shortcuts
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+# customizing ls command
+alias ls="eza -Ga"
+alias ll="eza -la"
+alias lt="eza -T"
+
+# quick apps shortcuts
+alias zed="zeditor"
+
+# Directory navigation shortcuts
+alias mkdir="mkdir -p"
+
 # Source p10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
