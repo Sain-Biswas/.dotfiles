@@ -44,7 +44,7 @@ cd ~/.dotfiles
 
 paru -Rcns vim nano htop wofi
 
-paru -Syy --needed chaotic-aur/android-studio bat chaotic-aur/brave-bin brightnessctl chromium clang cliphist dunst eslint eza fastfetch fzf gdb gnome-disk-utility go chaotic-aur/google-chrome grim chaotic-aur/grimblast-git hypridle hyprlock hyprpaper hyprpicker intellij-idea-community-edition kitty lldb loupe chaotic-aur/mongodb-compass neovim noto-fonts-emoji ntfs-3g nwg-look pavucontrol chaotic-aur/profile-sync-daemon-brave python-pip python-pywal16 rofi-wayland rust rust-analyzer stow ttf-font-awesome unzip chaotic-aur/visual-studio-code-bin warp-terminal waybar xdg-user-dirs xorg-xwayland zed zoxide zsh
+paru -Syy --needed chaotic-aur/android-studio bat chaotic-aur/brave-bin brightnessctl chromium clang cliphist dunst eslint eza fastfetch fzf gdb gnome-disk-utility go chaotic-aur/google-chrome grim chaotic-aur/grimblast-git hypridle hyprlock hyprpaper hyprpicker intellij-idea-community-edition kitty lldb loupe chaotic-aur/mongodb-compass neovim noto-fonts-emoji ntfs-3g nwg-look pavucontrol chaotic-aur/profile-sync-daemon-brave python-pip python-pywal16 rofi-wayland rust rust-analyzer stow ttf-font-awesome unzip chaotic-aur/visual-studio-code-bin warp-terminal waybar xdg-user-dirs xorg-xwayland zed zoxide zsh gtk2 noto-fonts-cjk noto-fonts-extra gnome-terminal
 
 xdg-user-dirs-update
 
