@@ -1,9 +1,9 @@
 @import "./colors.rasi"
+
 configuration {
     show-icons:                 false;
 }
 
-/*****----- Main Window -----*****/
 window {
     transparency:                "real";
     location:                    center;
@@ -21,7 +21,6 @@ window {
     background-color:            @background;
 }
 
-/*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
     spacing:                     0px;
@@ -34,7 +33,6 @@ mainbox {
     children:                    [ "inputbar", "listview", "message" ];
 }
 
-/*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
     spacing:                     0px;
@@ -55,17 +53,16 @@ textbox-prompt-colon {
     padding:                     12px;
     border-radius:               100%;
     background-color:            @urgent;
-    text-color:                  @foreground;
+    text-color:                  @background;
 }
 prompt {
     enabled:                     true;
     padding:                     12px;
     border-radius:               100%;
     background-color:            @active;
-    text-color:                  @foreground;
+    text-color:                  @background;
 }
 
-/*****----- Listview -----*****/
 listview {
     enabled:                     true;
     columns:                     6;
@@ -84,7 +81,6 @@ listview {
     cursor:                      "default";
 }
 
-/*****----- Elements -----*****/
 element {
     enabled:                     true;
     padding:                     15px 10px;
@@ -106,7 +102,6 @@ element selected.normal {
     text-color:                  var(background);
 }
 
-/*****----- Message -----*****/
 message {
     enabled:                     true;
     margin:                      0px 15px 15px 15px;

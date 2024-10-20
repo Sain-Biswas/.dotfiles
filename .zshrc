@@ -70,6 +70,7 @@ alias lt="eza -T"
 
 # quick apps shortcuts
 alias zed="zeditor"
+alias compass='mongodb-compass --ignore-additional-command-line-flags --password-store="gnome-libsecret" &'
 
 # Directory navigation shortcuts
 alias mkdir="mkdir -p"
@@ -78,3 +79,14 @@ alias mkdir="mkdir -p"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Created by User Applications
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/sainbiswas/.bun/_bun" ] && source "/home/sainbiswas/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
