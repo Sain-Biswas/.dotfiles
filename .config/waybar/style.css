@@ -2,9 +2,10 @@
 
 * {
     background-color: transparent;
-    padding: 1px 5px;
+    padding: 0.25px 5px;
     font-family: "Cartograph CF";
     color: @foreground;
+    font-size: 14px;
 }
 
 #clock,
@@ -12,20 +13,20 @@
 #network,
 #backlight,
 #battery {
-    padding: 1px 10px;
-    border-radius: 8px;
+    padding: 0.5px 8px;
+    border-radius: 25px;
     background-color: @color8;
 }
 
 #workspaces {
-    padding: 3px 3px;
-    border-radius: 8px;
+    padding: 1px 2px;
+    border-radius: 25px;
     background-color: @color8;
 }
 
 #workspaces button.active {
     background-color: @background;
-    border-radius: 8px;
+    border-radius: 25px;
 }
 
 tooltip {
@@ -38,5 +39,5 @@ tooltip label {
 }
 
 #workspaces button {
-    border-radius: 8px;
+    border-radius: 25px;
 }

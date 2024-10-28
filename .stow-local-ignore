@@ -5,5 +5,4 @@ resources
 install_apps.lst
 README.md
 .gitignore
-icons
 setup.sh

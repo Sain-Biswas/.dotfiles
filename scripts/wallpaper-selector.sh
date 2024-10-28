@@ -36,9 +36,7 @@ wal -i ~/.dotfiles/wallpapers/${wall_selection}
 echo "preload = ~/.dotfiles/wallpapers/${wall_selection}" > ~/.dotfiles/.config/hypr/hyprpaper.conf
 echo "wallpaper = , ~/.dotfiles/wallpapers/${wall_selection}" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
 
-cat ~/.cache/wal/colors-kitty.conf > ~/.dotfiles/.config/kitty/theme.conf
 cat ~/.cache/wal/colors-rasi-custom.rasi > ~/.dotfiles/.config/rofi/colors.rasi
-cat ~/.cache/wal/colors-warp.yml > ~/.dotfiles/.local/share/warp-terminal/themes/pywal_personal.yml
 cat ~/.cache/wal/colors-waybar.css > ~/.dotfiles/.config/waybar/colors.css
 
 killall waybar
