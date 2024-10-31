@@ -44,7 +44,7 @@ cd ~/.dotfiles
 
 paru -Rcns vim nano htop wofi dolphin qt5-wayland qt6-wayland polkit-kde-agent sassc
 
-paru -Syy --needed chaotic-aur/android-studio bat chaotic-aur/brave-bin brightnessctl chromium clang cliphist dunst eslint eza fastfetch fzf gdb gnome-disk-utility go chaotic-aur/google-chrome grim chaotic-aur/grimblast-git hypridle hyprlock hyprpaper hyprpicker intellij-idea-community-edition kitty lldb loupe chaotic-aur/mongodb-compass neovim noto-fonts-emoji ntfs-3g nwg-look pavucontrol chaotic-aur/profile-sync-daemon-brave python-pip python-pywal16 rofi-wayland rust rust-analyzer stow ttf-font-awesome unzip chaotic-aur/visual-studio-code-bin warp-terminal waybar xdg-user-dirs xorg-xwayland zed zoxide zsh gtk2 noto-fonts-cjk noto-fonts-extra gnome-terminal nautilus polkit-gnome gnome-keyring chaotic-aur/postman-bin zen-browser-avx2-bin docker docker-desktop firefox-developer-edition
+paru -Syy --needed chaotic-aur/android-studio bat chaotic-aur/brave-bin brightnessctl chromium clang cliphist dunst eslint eza fastfetch fzf gdb gnome-disk-utility go chaotic-aur/google-chrome grim chaotic-aur/grimblast-git hypridle hyprlock hyprpaper hyprpicker chaotic-aur/intellij-idea-ultimate-edition kitty lldb loupe chaotic-aur/mongodb-compass neovim noto-fonts-emoji ntfs-3g nwg-look pavucontrol chaotic-aur/profile-sync-daemon-brave python-pip python-pywal16 rofi-wayland rust rust-analyzer stow ttf-font-awesome unzip chaotic-aur/visual-studio-code-bin warp-terminal waybar xdg-user-dirs xorg-xwayland zed zoxide zsh gtk2 noto-fonts-cjk noto-fonts-extra gnome-terminal nautilus polkit-gnome gnome-keyring chaotic-aur/postman-bin zen-browser-avx2-bin docker docker-desktop firefox-developer-edition
 
 xdg-user-dirs-update
 

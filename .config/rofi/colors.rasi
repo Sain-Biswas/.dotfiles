@@ -1,12 +1,12 @@
 * {
     font:                        "Cartograph CF 12";
-    background:                  #38191e;
-    background-alt:              #7e676a;
-    foreground:                  #cdc5c6;
-    selected:                    #D6BAC5;
-    active:                      #E0A4A7;
-    urgent:                      #D08B93;
-    back-image-width:            url("/home/sainbiswas/.dotfiles/wallpapers/yae-miko-sakura.png", width);
-    back-image-height:           url("/home/sainbiswas/.dotfiles/wallpapers/yae-miko-sakura.png", height);
+    background:                  #0D1214;
+    background-alt:              #59656d;
+    foreground:                  #c2c3c4;
+    selected:                    #CCAF99;
+    active:                      #669194;
+    urgent:                      #2B7B82;
+    back-image-width:            url("/home/sainbiswas/.dotfiles/wallpapers/AnimeWaiting.jpg", width);
+    back-image-height:           url("/home/sainbiswas/.dotfiles/wallpapers/AnimeWaiting.jpg", height);
     text:                        #FFFFFF;
 }
