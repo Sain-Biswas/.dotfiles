@@ -43,7 +43,14 @@ ghostty
 
 Other Needed Packages
 ```
+nautilus
 rofi
+```
+
+Utilities
+```
+brightnessctl
+playerctl
 ```
 
 Audio
@@ -52,8 +59,14 @@ pipewire
 wireplumber
 pipewire-alsa
 pipewire-pulse
+pipewire-jack
 pavucontrol
 pamixer
+```
+
+Status Bar
+```
+waybar
 ```
 
 Wifi Setup
@@ -85,4 +98,17 @@ Browsers
 ```
 chromium
 
+```
+
+Theming
+```
+nwg-look
+python-pywal16
+```
+
+Screen Shot
+```
+grim
+slurp
+swappy
 ```
