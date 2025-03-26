@@ -1,4 +1,4 @@
-# .dotfiles
+# Arch Linux Hyprland Dotfiles
 
 My personal Linux dotfiles for setup of Hyprland Window Manager and Gnome Desktop Environment on Arch Linux.
 
@@ -10,3 +10,79 @@ Installed packages:
 - git
 - sof-firmware (Sound drivers - Optional)
 - vim/ neovim/ nano (To make any changes if needed - Optional)
+
+## Changes done by the Install Script
+
+### Installed Packages
+
+AUR helper - paru
+
+Needed System Packages
+```
+rust
+go
+ntfs-3g
+stow
+base-devel
+curl
+wget
+```
+
+Core Hyprland packages
+```
+hyprland
+xdg-desktop-portal-hyprland
+polkit-kde-agent
+sddm
+```
+
+Terminal
+```
+ghostty
+```
+
+Other Needed Packages
+```
+rofi
+```
+
+Audio
+```
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-pulse
+pavucontrol
+pamixer
+```
+
+Wifi Setup
+```
+networkmanager
+nm-connection-editor
+network-manager-applet
+```
+
+Bluetooth
+```
+bluez
+bluez-utils
+blueman
+```
+
+Fonts
+```
+noto-fonts
+```
+
+Development Related
+```
+visual-studio-code-bin
+zed
+```
+
+Browsers
+```
+chromium
+
+```
