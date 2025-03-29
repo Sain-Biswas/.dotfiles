@@ -112,3 +112,8 @@ grim
 slurp
 swappy
 ```
+
+Clipboard
+```
+cliphist
+```
