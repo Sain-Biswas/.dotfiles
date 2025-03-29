@@ -32,7 +32,7 @@ Core Hyprland packages
 ```
 hyprland
 xdg-desktop-portal-hyprland
-polkit-kde-agent
+hyprpolkitagent
 sddm
 ```
 
