@@ -133,3 +133,8 @@ Clipboard
 ```
 cliphist
 ```
+
+Entertainment
+```
+spotify
+```
