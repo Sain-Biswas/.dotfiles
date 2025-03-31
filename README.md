@@ -45,6 +45,9 @@ Other Needed Packages
 ```
 nautilus
 rofi
+loupe
+libheif
+vlc
 ```
 
 Utilities
@@ -67,6 +70,7 @@ pamixer
 Status Bar
 ```
 waybar
+otf-font-awesome
 ```
 
 Wifi Setup
