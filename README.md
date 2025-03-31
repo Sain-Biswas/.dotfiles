@@ -32,8 +32,13 @@ Core Hyprland packages
 ```
 hyprland
 xdg-desktop-portal-hyprland
-hyprpolkitagent
 sddm
+```
+
+Hyprland Ecosystem
+```
+hyprpolkitagent
+hyprpicker
 ```
 
 Terminal
