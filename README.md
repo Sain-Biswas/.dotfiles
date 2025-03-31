@@ -78,6 +78,11 @@ waybar
 otf-font-awesome
 ```
 
+Notification Daemon
+```
+swaync
+```
+
 Wifi Setup
 ```
 networkmanager
@@ -95,6 +100,8 @@ blueman
 Fonts
 ```
 noto-fonts
+noto-fonts-emoji
+noto-fonts-cjk
 ```
 
 Development Related
