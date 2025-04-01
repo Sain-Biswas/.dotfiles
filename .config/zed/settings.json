@@ -7,12 +7,48 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // Font
   "ui_font_size": 16,
-  "ui_font_family": "Noto Sans",
+  "ui_font_family": "Cartograph CF",
   "buffer_font_size": 16,
+  "buffer_font_family": "Cartograph CF",
+
+  // Theme
   "theme": {
-    "mode": "system",
-    "light": "Vercel Dark",
+    "mode": "dark",
+    "light": "Vercel Light",
     "dark": "Vercel Dark"
+  },
+
+  // Terminal
+  "terminal": {
+    "font_family": "Cartograph CF",
+    "cursor_shape": "bar"
+  },
+
+  // Code
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+
+  // Extensions
+  "auto_install_extensions": {
+    "html": true,
+    "toml": true,
+    "git-firefly": true,
+    "svelte": true,
+    "lua": true,
+    "scss": true,
+    "astro": true,
+    "emmet": true,
+    "prisma": true,
+    "env": true,
+    "colored-zed-icons-theme": true
+  },
+
+  // Icon Theme
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Colored Zed Icons Theme Light",
+    "dark": "Colored Zed Icons Theme Dark"
   }
 }
