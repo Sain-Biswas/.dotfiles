@@ -124,6 +124,7 @@ matugen-bin
 pywal-spicetify
 spicetify-cli
 python-pywalfox
+adw-gtk-theme
 ```
 
 Screen Shot
