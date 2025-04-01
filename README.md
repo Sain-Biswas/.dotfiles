@@ -125,6 +125,7 @@ pywal-spicetify
 spicetify-cli
 python-pywalfox
 adw-gtk-theme
+swww
 ```
 
 Screen Shot
