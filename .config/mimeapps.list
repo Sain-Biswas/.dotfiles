@@ -1,0 +1,13 @@
+[Default Applications]
+image/jpeg=org.gnome.Loupe.desktop
+image/png=org.gnome.Loupe.desktop
+image/webp=org.gnome.Loupe.desktop
+application/x-zerosize=org.gnome.Loupe.desktop
+image/gif=org.gnome.Loupe.desktop
+
+[Added Associations]
+image/jpeg=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop;
+image/webp=org.gnome.Loupe.desktop;
+application/x-zerosize=org.gnome.Loupe.desktop;
+image/gif=org.gnome.Loupe.desktop;
