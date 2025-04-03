@@ -9,10 +9,10 @@ version_check = true
 # Templates
 
 # Bat
-# [templates.bat]
-# input_path = '~/.config/matugen/templates/matugen-bat-colors.tmTheme'
-# output_path = '~/.config/bat/themes/matugen-bat-colors.tmTheme'
-# post_hook = 'bat cache --build'
+[templates.bat]
+input_path = '~/.dotfiles/.config/matugen/templates/matugen-bat.tmTheme'
+output_path = '~/.dotfiles/.config/bat/themes/matugen.tmTheme'
+post_hook = 'bat cache --build'
 
 # Spicetify
 # [templates.spicetify]
