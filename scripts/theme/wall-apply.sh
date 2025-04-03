@@ -25,7 +25,7 @@ wal -i "$IMAGE"
 matugen image "$IMAGE"
 
 # Update pywal colors
-
+cat ~/.cache/wal/ghostty.conf > ~/.dotfiles/.config/ghostty/themes/pywal
 
 # Notify user : Changed Successfully
 notify-send "Theme Applied" "Wallpaper and Theme applied seccessfully!"
