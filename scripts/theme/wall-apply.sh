@@ -1,0 +1,31 @@
+#!/bin/env bash
+
+# ░█░█░█▀█░█░░░█░░░░░█▀█░█▀█░█▀█░█░░░█░█
+# ░█▄█░█▀█░█░░░█░░░░░█▀█░█▀▀░█▀▀░█░░░░█░
+# ░▀░▀░▀░▀░▀▀▀░▀▀▀░░░▀░▀░▀░░░▀░░░▀▀▀░░▀░
+
+# Check if the user provided an argument
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <path-to-image>"
+    exit 1
+fi
+
+IMAGE="$1"
+
+# Notify user : Changing
+notify-send "Changing Theme" "Applying new wallpaper and updating colors, please wait until confirmation..."
+
+# Set wallpaper
+swww img "$IMAGE" --transition-type="center"
+
+# Generate pywal 16 colors
+wal -i "$IMAGE"
+
+# Apply matugen Theme
+matugen image "$IMAGE"
+
+# Update pywal colors
+
+
+# Notify user : Changed Successfully
+notify-send "Theme Applied" "Wallpaper and Theme applied seccessfully!"
