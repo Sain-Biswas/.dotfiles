@@ -43,6 +43,7 @@ Hyprland Ecosystem
 ```
 hyprpolkitagent
 hyprpicker
+hyprlock
 ```
 
 Terminal

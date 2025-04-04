@@ -1,0 +1,64 @@
+configuration {
+    show-icons:                 false;
+}
+
+@import "~/.dotfiles/.config/rofi/colors.rasi"
+
+window {
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       20em;
+    padding:                     0.5em;
+    background-color:            transparent;
+}
+
+mainbox {
+    orientation:                 vertical;
+    border-radius:               0.5em;
+    padding:                     0.5em;
+    background-color:            @surface-alpha;
+    children:                    [ "message", "listview" ];
+}
+
+message {
+    enabled:                     true;
+    margin:                      0em;
+    padding:                     0.5em;
+    border-radius:               0.5em;
+    background-color:            transparent;
+    text-color:                  @on-surface;
+}
+
+textbox {
+    horizontal-align:            0.5;
+    background-color:            transparent;
+    text-color:                  @on-surface;
+}
+
+listview {
+    columns:                     2;
+    lines:                       1;
+    spacing:                     0.5em;
+    background-color:            transparent;
+}
+
+element {
+    enabled:                     true;
+    padding:                     0.5em 2em;
+    border-radius:               0.5em;
+    background-color:            transparent;
+    text-color:                  @on-surface;
+    cursor:                      pointer;
+}
+
+element-text {
+    horizontal-align:            0.5;
+    background-color:            transparent;
+    text-color:                  @on-surface;
+}
+
+element selected.normal {
+    background-color:            @secondary;
+    text-color:                  @on-secondary;
+}

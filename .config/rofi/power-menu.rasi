@@ -1,0 +1,116 @@
+configuration {
+    show-icons:                 false;
+}
+
+@import "~/.dotfiles/.config/rofi/colors.rasi"
+
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       40em;
+
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    padding:                     0.5em;
+    border:                      0px solid;
+    border-radius:               0.5em;
+    border-color:                @outline;
+    cursor:                      "default";
+    background-color:            transparent;
+}
+
+mainbox {
+    background-color:            @surface-alpha;
+    border-radius:               0.5em;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listview" ];
+}
+
+imagebox {
+    spacing:                     1em;
+    padding:                     1em;
+    background-color:            transparent;
+    background-image:            @image-height;
+    children:                    [ "inputbar", "dummy", "message" ];
+}
+
+userimage {
+    margin:                      0px 0px;
+
+    border-radius:               0.5em;
+    border-color:                @surface-alpha;
+    background-color:            transparent;
+    background-image:            url("~/.config/rofi/images/d.png", height);
+}
+
+inputbar {
+    padding:                     0.5em;
+    border-radius:               0.5em;
+    background-color:            @tertiary;
+    text-color:                  @on-tertiary;
+    children:                    [ "dummy", "prompt", "dummy"];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+prompt {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+message {
+    enabled:                     true;
+    margin:                      0em;
+    padding:                     0.5em;
+    border-radius:               0.5em;
+    background-color:            @primary;
+    text-color:                  @on-primary;
+}
+textbox {
+    background-color:            inherit;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       6;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     0.5em;
+    margin:                      0.5em;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+element {
+    enabled:                     true;
+    padding:                     0.5em 2em;
+    border-radius:               0.5em;
+    background-color:            transparent;
+    text-color:                  @on-surface;
+    cursor:                      pointer;
+}
+element-text {
+    font:                        "Font Awesome 14";
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+}
+element selected.normal {
+    background-color:            @secondary;
+    text-color:                  @on-secondary;
+}
