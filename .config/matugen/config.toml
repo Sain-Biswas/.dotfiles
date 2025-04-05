@@ -41,10 +41,10 @@ output_path = '~/.dotfiles/.config/waybar/colors.css'
 post_hook = 'pkill -SIGUSR2 waybar'
 
 # Swaync
-# [templates.swaync]
-# input_path = '~/.config/matugen/templates/matugen-swaync.css'
-# output_path = '~/.config/swaync/matugen/matugen-swaync.css'
-# post_hook = 'swaync-client -rs'
+[templates.swaync]
+input_path = '~/.config/matugen/templates/matugen-swaync.css'
+output_path = '~/.dotfiles/.config/swaync/colors.css'
+post_hook = 'swaync-client -rs'
 
 
 # Gtk3

@@ -47,7 +47,7 @@ SELECTED_WALL_PATH="${HOME}/.dotfiles/wallpapers/$SELECTED_WALL"
 
 # If selected wallpaper exist, pass to wall-apply
 if [ -n "$SELECTED_WALL_PATH" ]; then
-    wall-apply.sh "$SELECTED_WALL_PATH"
+    ${SCRIPT_DIR}wall-apply.sh "$SELECTED_WALL_PATH"
 fi
 
 # Go back to starting Directory
