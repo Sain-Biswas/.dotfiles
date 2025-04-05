@@ -111,7 +111,7 @@
         },
         {
           "label": "",
-          "command": "bash -c $HOME/.config/hypr/scripts/airplaneMode.sh",
+          "command": "bash -c $HOME/.dotfiles/scripts/system/airplane-mode.sh",
           "type": "toggle"
         }
       ]
