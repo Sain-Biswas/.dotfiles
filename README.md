@@ -61,6 +61,7 @@ loupe
 libheif
 vlc
 ffmpeg
+telegram-desktop
 ```
 
 Utilities
@@ -143,6 +144,7 @@ python-pywal16
 matugen-bin
 spicetify-cli
 python-pywalfox
+wal-telegram-git
 adw-gtk-theme
 swww
 kvantum
