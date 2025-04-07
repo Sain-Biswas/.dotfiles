@@ -87,7 +87,7 @@ output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
 # output_path = '~/.cache/wal/colors'
 
 # Pywalfox
-# [templates.pywalfox]
-# input_path = '~/.config/matugen/templates/pywalfox-colors.json'
-# output_path = '~/.cache/wal/colors.json'
-# post_hook = 'pywalfox update'
+[templates.pywalfox]
+input_path = '~/.dotfiles/.config/matugen/templates/matugen-pywalfox.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'

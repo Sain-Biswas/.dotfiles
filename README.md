@@ -60,6 +60,7 @@ rofi
 loupe
 libheif
 vlc
+ffmpeg
 ```
 
 Utilities
@@ -129,7 +130,7 @@ Browsers
 
 ```
 chromium
-
+zen-browser-bin
 ```
 
 Theming
