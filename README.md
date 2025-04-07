@@ -139,7 +139,6 @@ Theming
 nwg-look
 python-pywal16
 matugen-bin
-pywal-spicetify
 spicetify-cli
 python-pywalfox
 adw-gtk-theme

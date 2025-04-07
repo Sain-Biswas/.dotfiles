@@ -15,9 +15,10 @@ output_path = '~/.dotfiles/.config/bat/themes/matugen.tmTheme'
 post_hook = 'bat cache --build'
 
 # Spicetify
-# [templates.spicetify]
-# input_path = '~/.config/matugen/templates/spotify-colors.ini'
-# output_path = '~/.config/spicetify/Themes/Comfy/color.ini'
+[templates.spicetify]
+input_path = '~/.dotfiles/.config/matugen/templates/matugen-spicetify.ini'
+output_path = '~/.dotfiles/.config/spicetify/Themes/Matugen/color.ini'
+
 
 # Rofi
 [templates.rofi]
