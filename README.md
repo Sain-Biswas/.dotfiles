@@ -68,6 +68,8 @@ Utilities
 ```
 brightnessctl
 playerctl
+btop
+bat
 ```
 
 Audio

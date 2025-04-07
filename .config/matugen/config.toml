@@ -73,10 +73,10 @@ output_path = '~/.config/qt6ct/colors/matugen-qt6ct.conf'
 input_path = '~/.config/matugen/templates/matugen-kvantum.kvconfig'
 output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
 
-# Cava
-# [templates.cava]
-# input_path = '~/.config/matugen/templates/matugen-cava'
-# output_path = '~/.config/cava/config'
+# Btop
+[templates.btop]
+input_path = '~/.dotfiles/.config/matugen/templates/matugen-btop.theme'
+output_path = '~/.dotfiles/.config/btop/themes/matugen.theme'
 
 # Neovim & Nvchad
 # [templates.neovim-nvchad]
