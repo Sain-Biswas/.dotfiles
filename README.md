@@ -150,6 +150,16 @@ qt5-wayland
 qt6-wayland
 qt5ct
 qt6ct
+tela-circle-icon-theme-black
+tela-circle-icon-theme-blue
+tela-circle-icon-theme-dracula
+tela-circle-icon-theme-green
+tela-circle-icon-theme-orange
+tela-circle-icon-theme-pink
+tela-circle-icon-theme-purple
+tela-circle-icon-theme-red
+tela-circle-icon-theme-yellow
+bibata-cursor-theme-bin
 ```
 
 Screen Shot
