@@ -24,8 +24,12 @@ wal -i "$IMAGE"
 # Apply matugen Theme
 matugen image "$IMAGE"
 
-# Update pywal colors
+# Update pywal colors to ghostty
 cat ~/.cache/wal/ghostty.conf > ~/.dotfiles/.config/ghostty/themes/pywal
+
+# Update pywal colors to warp terminal
+mkdir -p ~/.local/share/warp-terminal/themes/
+cat ~/.cache/wal/colors-warp-terminal.yml > ~/.local/share/warp-terminal/themes/pywal_16.yml
 
 # Generate Telegram Theme
 wal-telegram --wal

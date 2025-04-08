@@ -1,0 +1,7 @@
+---
+"pane_group:add_up": ctrl-alt-shift-up
+"pane_group:add_left": ctrl-alt-shift-left
+"input:clear_screen": ctrl-alt-l
+"pane_group:add_down": ctrl-alt-shift-down
+"terminal:clear_blocks": ctrl-l
+"pane_group:add_right": ctrl-alt-shift-right
