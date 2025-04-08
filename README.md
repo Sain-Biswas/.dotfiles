@@ -50,6 +50,7 @@ Terminal
 
 ```
 ghostty
+zsh
 ```
 
 Other Needed Packages
@@ -73,6 +74,7 @@ btop
 bat
 fzf
 zoxide
+eza
 ```
 
 Audio
