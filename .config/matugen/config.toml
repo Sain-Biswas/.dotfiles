@@ -18,7 +18,7 @@ post_hook = 'bat cache --build'
 [templates.spicetify]
 input_path = '~/.dotfiles/.config/matugen/templates/matugen-spicetify.ini'
 output_path = '~/.dotfiles/.config/spicetify/Themes/Matugen/color.ini'
-
+post_hook = 'spicetify apply'
 
 # Rofi
 [templates.rofi]
