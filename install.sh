@@ -3,15 +3,20 @@
 # Update all packages
 sudo pacman -Syyu
 
-# Creating symlinks for dotfiles
+# Install rust for paru
 cd ~
 sudo pacman -S --needed rust
+
+# Make Needed Folders
 mkdir -p .config Github
 cd .config
 touch hello.txt
+
+# Creating symlinks for dotfiles
 cd ~/.dotfiles
 stow .
 
+# Remove unwanted files
 cd ~/.config
 rm hello.txt
 
