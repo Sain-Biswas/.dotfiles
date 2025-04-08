@@ -26,14 +26,14 @@ input_path = '~/.dotfiles/.config/matugen/templates/matugen-rofi.rasi'
 output_path = '~/.dotfiles/.config/rofi/colors.rasi'
 
 # Hyprland
-# [templates.hyprland]
-# input_path = '~/.config/matugen/templates/matugen-hyprland.conf'
-# output_path = '~/.config/hypr/matugen/matugen-hyprland.conf'
+[templates.hyprland]
+input_path = '~/.dotfiles/.config/matugen/templates/matugen-hypr.conf'
+output_path = '~/.dotfiles/.config/hypr/configuration/colors.conf'
 
 # Hyprlock
-# [templates.hyprlock]
-# input_path = '~/.config/matugen/templates/matugen-hyprlock.conf'
-# output_path = '~/.config/hypr/hyprlock/matugen/matugen-hyprlock.conf'
+[templates.hyprlock]
+input_path = '~/.dotfiles/.config/matugen/templates/matugen-hypr.conf'
+output_path = '~/.dotfiles/.config/hypr/hyprlock-configuration/colors.conf'
 
 # Waybar
 [templates.waybar]

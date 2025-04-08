@@ -16,12 +16,15 @@ sddm
 hyprpolkitagent
 hyprpicker
 hyprlock
+hypridle
 
 # Terminal
 ghostty
 zsh
+warp-terminal
 
 # Other Needed Packages
+neovim
 nautilus
 rofi
 loupe
@@ -29,6 +32,8 @@ libheif
 vlc
 ffmpeg
 telegram-desktop
+gnome-disk-utility
+python-pip
 
 # Utilities
 brightnessctl
@@ -38,11 +43,16 @@ bat
 fzf
 zoxide
 eza
+fastfetch
+less
+unzip
 
 # Audio
+gst-plugin-pipewire
 pipewire
 wireplumber
 pipewire-alsa
+pipewire-audio
 pipewire-pulse
 pipewire-jack
 pavucontrol
@@ -71,12 +81,21 @@ noto-fonts-emoji
 noto-fonts-cjk
 
 # Development Related
+intellij-idea-ultimate-edition
+jdk-openjdk
+mongodb-compass
+postman-bin
+rust-analyzer
 visual-studio-code-bin
 zed
 
 # Browsers
 chromium
 zen-browser-bin
+brave-bin
+profile-sync-daemon-brave
+firefox-developer-edition
+google-chrome
 
 # Theming
 nwg-look
@@ -114,3 +133,11 @@ cliphist
 
 # Entertainment
 spotify
+
+# Others
+openssl
+file
+webkit2gtk-4.1
+appmenu-gtk-module
+libappindicator-gtk3
+librsvg
