@@ -22,11 +22,11 @@ get_metadata() {
 get_source_info_symbol() {
 	trackid=$(get_metadata "mpris:trackid")
 	if [[ "$trackid" == *"firefox"* ]]; then
-		echo -e " 󰈹 "
+		echo -e "󰈹"
 	elif [[ "$trackid" == *"spotify"* ]]; then
-		echo -e "  "
+		echo -e ""
 	elif [[ "$trackid" == *"chromium"* ]]; then
-		echo -e "  "
+		echo -e ""
         elif [[ "$trackid" == *"/0"* ]]; then
                 echo -e ""
 	else
@@ -43,7 +43,7 @@ get_source_info() {
 	elif [[ "$trackid" == *"chromium"* ]]; then
 		echo -e "Chrome"
         elif [[ "$trackid" == *"/0"* ]]; then
-                echo -e "MPV"
+                echo -e "Mpv"
 	else
 		echo ""
 	fi

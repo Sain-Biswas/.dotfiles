@@ -4,9 +4,6 @@
 # ░█▀█░░█░░█▀▀░█▀▄░█░░░█░█░█░░░█▀▄░░░▄▄▄░░░█▀▄░█░░░█░█░█▀▀░░█░░█░█░█░█░░█░░█▀█
 # ░▀░▀░░▀░░▀░░░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░░░░░░░░░▀▀░░▀▀▀░▀▀▀░▀▀▀░░▀░░▀▀▀░▀▀▀░░▀░░▀░▀
 
-
-
-
 # Path to the Hyprlcok configuration file
 config_file="$HOME/.config/hypr/hyprlock.conf"
 
@@ -18,7 +15,7 @@ bluetooth_status=$(bluetoothctl show | grep "Powered:" | awk '{print $2}')
 
 # Check if Bluetooth is powered on
 if [ "$bluetooth_status" != "yes" ]; then
-    echo " Bluetooth Off"
+    echo "󰂯 Bluetooth Off"
     exit 0
 fi
 
@@ -41,13 +38,13 @@ done < <(bluetoothctl devices)
 
 # If no connected devices, show "No Devices"
 if [ -z "$connected_devices" ]; then
-    echo " No Devices"
+    echo "󰂲 No Devices"
     exit 0
 fi
 
 # Display output based on bt-mode
 if [ "$bt_mode" = "true" ]; then
-    echo " $connected_devices"
+    echo "󰂯 $connected_devices"
 else
-    echo " Connected"
+    echo "󰂯 Connected"
 fi
