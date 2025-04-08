@@ -72,4 +72,27 @@ eval "$(zoxide init --cmd cd zsh)"
 source ~/.dotfiles/alias.zsh
 source ~/.dotfiles/matugen.zsh
 
+# Scripts
+export PATH="$HOME/.dotfiles/scripts/theme:$PATH"
+
+# Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/sainbiswas/.bun/_bun" ] && source "/home/sainbiswas/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/sainbiswas/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 # Added By Custom Applications
