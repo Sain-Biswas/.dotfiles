@@ -4,8 +4,15 @@
 
 # Fzf colors
 export FZF_DEFAULT_OPTS=" \
---color=bg+:{{colors.surface.default.hex}},bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
---color=selected-bg:#45475a \
---color=border:#313244,label:#cdd6f4"
+--style full \
+--preview 'bat --color=always {}' --bind 'focus:transform-header:file --brief {}' \
+--color=bg+:{{colors.surface_bright.default.hex}},bg:{{colors.surface.default.hex}},spinner:{{colors.error.default.hex}},hl:{{colors.secondary.default.hex}} \
+--color=fg:{{colors.on_surface.default.hex}},header:{{colors.secondary.default.hex}},info:{{colors.tertiary.default.hex}},pointer:{{colors.error.default.hex}} \
+--color=marker:{{colors.primary.default.hex}},fg+:{{colors.on_surface.default.hex}},prompt:{{colors.tertiary.default.hex}},hl+:{{colors.secondary.default.hex}} \
+--color=selected-bg:{{colors.primary.default.hex}} \
+--color=border:{{colors.outline.default.hex}},label:{{colors.on_surface.default.hex}} \
+--multi"
+
+
+# Aloxaf fzf - tab
+zstyle ':fzf-tab:*' fzf-flags --style full --preview 'bat --color=always {}' --bind 'focus:transform-header:file --brief {}' --color=bg+:{{colors.surface_bright.default.hex}},bg:{{colors.surface.default.hex}},spinner:{{colors.error.default.hex}},hl:{{colors.secondary.default.hex}},fg:{{colors.on_surface.default.hex}},header:{{colors.secondary.default.hex}},info:{{colors.tertiary.default.hex}},pointer:{{colors.error.default.hex}},marker:{{colors.primary.default.hex}},fg+:{{colors.on_surface.default.hex}},prompt:{{colors.tertiary.default.hex}},hl+:{{colors.secondary.default.hex}},selected-bg:{{colors.primary.default.hex}},border:{{colors.outline.default.hex}},label:{{colors.on_surface.default.hex}} --multi

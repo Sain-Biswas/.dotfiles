@@ -92,3 +92,8 @@ output_path = '~/.dotfiles/.config/btop/themes/matugen.theme'
 input_path = '~/.dotfiles/.config/matugen/templates/matugen-pywalfox.json'
 output_path = '~/.cache/wal/colors.json'
 post_hook = 'pywalfox update'
+
+#Zsh
+[templates.zsh]
+input_path = '~/.dotfiles/.config/matugen/templates/matugen-zsh.zsh'
+output_path = '~/.dotfiles/matugen.zsh'

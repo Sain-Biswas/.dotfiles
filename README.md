@@ -71,6 +71,8 @@ brightnessctl
 playerctl
 btop
 bat
+fzf
+zoxide
 ```
 
 Audio
