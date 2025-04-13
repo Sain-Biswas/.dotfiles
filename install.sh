@@ -62,6 +62,7 @@ paru -Sccc
 # Setup sddm
 sudo systemctl enable sddm
 sudo systemctl set-default graphical.target
+sudo systemctl enable bluetooth.service
 
 # Start Hyprland
 Hyprland
