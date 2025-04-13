@@ -5,7 +5,7 @@ sudo pacman -Syyu
 
 # Install rust for paru
 cd ~
-sudo pacman -S --needed rust
+sudo pacman -S --needed rust stow
 
 # Make Needed Folders
 mkdir -p .config Github
@@ -36,7 +36,7 @@ sudo pacman -Syyu
 
 # Install Packages
 cd ~
-paru -Syy --needed $(grep -v '^#' packages.lst | tr '\n' ' ')
+paru -Syy --needed $(grep -v '^#' ~/.dotfiles/packages.lst | tr '\n' ' ')
 
 # Install nvm and node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | sh
