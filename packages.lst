@@ -13,7 +13,6 @@ xdg-desktop-portal-hyprland
 sddm
 
 # Hyprland Ecosystem
-hyprpolkitagent
 hyprpicker
 hyprlock
 hypridle
@@ -24,6 +23,7 @@ zsh
 warp-terminal
 
 # Other Needed Packages
+polkit-gnome
 neovim
 nautilus
 rofi
