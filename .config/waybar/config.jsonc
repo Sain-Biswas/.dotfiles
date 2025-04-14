@@ -28,7 +28,7 @@
   "modules-right": [
     "tray",
     "pulseaudio",
-    "network",
+    //"network",
     "group/utility",
     "battery",
   ],
@@ -207,7 +207,7 @@
     "format-disconnected": " ",
     "format-ethernet": " {signalStrength}%",
     "format-linked": "{ifname} (No IP)",
-    "format-wifi": "  {signalStrength}%",
+    "format-wifi": "  {essid}",
     "tooltip-format": "Connected to {essid} via {ifname} on {gwaddr}",
     "format-alt": "  {ifname}: {ipaddr}/{cidr}",
   },
