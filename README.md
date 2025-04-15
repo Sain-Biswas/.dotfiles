@@ -12,6 +12,31 @@ Installed packages:
 - sof-firmware (Sound drivers - Optional)
 - vim/ neovim/ nano (To make any changes if needed - Optional)
 
+## How to Install
+
+Connect to the Internet
+
+Clone the git repo to ~ or $HOME:
+
+```
+cd ~
+git clone https://github.com/Sain-Biswas/.dotfiles.git
+```
+
+Path must be $HOME as all scripts are dependent on it.
+
+Go to .dotfiles directory
+
+```
+cd ~/.dotfiles
+```
+
+Execute the install script
+
+```
+./install.sh
+```
+
 ## Changes done by the Install Script
 
 ### Installed Packages
