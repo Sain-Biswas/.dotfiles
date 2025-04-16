@@ -34,6 +34,9 @@ ffmpeg
 telegram-desktop
 gnome-disk-utility
 python-pip
+gnome-keyring
+libsecret
+seahorse
 
 # Utilities
 brightnessctl
