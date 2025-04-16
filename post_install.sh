@@ -20,3 +20,4 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 
 # Set all directories as git safe directory
 git config --global --add safe.directory "*"
+git config --global credential.helper store
