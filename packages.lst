@@ -90,6 +90,10 @@ rust-analyzer
 visual-studio-code-bin
 zed
 
+podman
+podman-desktop
+podman-compose
+
 # Browsers
 chromium
 zen-browser-bin
