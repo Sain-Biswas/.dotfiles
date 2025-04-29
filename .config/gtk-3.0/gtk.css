@@ -5,9 +5,9 @@
  */
 
  /* Accent */
- @define-color accent_color #c8bfff;
- @define-color accent_bg_color #c8bfff;
- @define-color accent_fg_color #30285f;
+ @define-color accent_color #cabeff;
+ @define-color accent_bg_color #cabeff;
+ @define-color accent_fg_color #31285f;
 
  /* Destructive */
  @define-color destructive_color #93000a;
@@ -20,9 +20,9 @@
  @define-color success_fg_color #312e41;
 
  /* Warning */
- @define-color warning_color #ecb8cd;
- @define-color warning_bg_color #ecb8cd;
- @define-color warning_fg_color #482536;
+ @define-color warning_color #edb8cc;
+ @define-color warning_bg_color #edb8cc;
+ @define-color warning_fg_color #492535;
 
  /* Error */
  @define-color error_color #ffb4ab;
@@ -31,39 +31,39 @@
 
  /* Window */
  @define-color window_bg_color #141318;
- @define-color window_fg_color #e5e1e9;
+ @define-color window_fg_color #e6e1e9;
  @define-color view_bg_color #141318;
- @define-color view_fg_color #e5e1e9;
+ @define-color view_fg_color #e6e1e9;
 
  /* Header */
  @define-color headerbar_bg_color #2b292f;
- @define-color headerbar_fg_color #e5e1e9;
+ @define-color headerbar_fg_color #e6e1e9;
  @define-color headerbar_border_color #938f99;
  @define-color headerbar_backdrop_color #1c1b20;
  @define-color headerbar_shade_color #141318;
 
  /* Card */
  @define-color card_bg_color #141318;
- @define-color card_fg_color #e5e1e9;
- @define-color card_shade_color #e5dff9;
+ @define-color card_fg_color #e6e1e9;
+ @define-color card_shade_color #e6dff9;
 
  /* Dialog */
  @define-color dialog_bg_color #141318;
- @define-color dialog_fg_color #e5e1e9;
+ @define-color dialog_fg_color #e6e1e9;
 
  /* Popover */
  @define-color popover_bg_color #141318;
- @define-color popover_fg_color #e5e1e9;
+ @define-color popover_fg_color #e6e1e9;
 
  /* Shade */
- @define-color shade_color #e5deff;
- @define-color scrollbar_outline_color #1b1149;
+ @define-color shade_color #e6deff;
+ @define-color scrollbar_outline_color #1c1149;
 
  /* Sidebar */
- @define-color sidebar_bg_color #0e0d13;
- @define-color sidebar_fg_color #e5e1e9;
- @define-color sidebar_backdrop_color #c9c5d0;
- @define-color sidebar_shade_color #ffd8e7;
+ @define-color sidebar_bg_color #0f0d13;
+ @define-color sidebar_fg_color #e6e1e9;
+ @define-color sidebar_backdrop_color #c9c4d0;
+ @define-color sidebar_shade_color #ffd8e6;
 
 /* Navigation Sidebar */
 .navigation-sidebar {

@@ -1,9 +1,9 @@
 theme[main_bg]="#141318"
-theme[main_fg]="#e5e1e9"
+theme[main_fg]="#e6e1e9"
 
-theme[title]="#c8bfff"
+theme[title]="#cabeff"
 
-theme[hi_fg]="#ecb8cd"
+theme[hi_fg]="#edb8cc"
 
 theme[selected_bg]="#c9c3dc"
 
@@ -24,38 +24,38 @@ theme[proc_box]="#ffb4ab"
 
 theme[div_line]="#ffb4ab"
 
-theme[temp_start]="#c8bfff"
+theme[temp_start]="#cabeff"
 theme[temp_mid]="#c9c3dc"
-theme[temp_end]="#ecb8cd"
+theme[temp_end]="#edb8cc"
 
-theme[cpu_start]="#c8bfff"
+theme[cpu_start]="#cabeff"
 theme[cpu_mid]="#c9c3dc"
-theme[cpu_end]="#ecb8cd"
+theme[cpu_end]="#edb8cc"
 
-theme[free_start]="#c8bfff"
+theme[free_start]="#cabeff"
 theme[free_mid]="#c9c3dc"
-theme[free_end]="#ecb8cd"
+theme[free_end]="#edb8cc"
 
-theme[cached_start]="#c8bfff"
+theme[cached_start]="#cabeff"
 theme[cached_mid]="#c9c3dc"
-theme[cached_end]="#ecb8cd"
+theme[cached_end]="#edb8cc"
 
-theme[available_start]="#c8bfff"
+theme[available_start]="#cabeff"
 theme[available_mid]="#c9c3dc"
-theme[available_end]="#ecb8cd"
+theme[available_end]="#edb8cc"
 
-theme[used_start]="#c8bfff"
+theme[used_start]="#cabeff"
 theme[used_mid]="#c9c3dc"
-theme[used_end]="#ecb8cd"
+theme[used_end]="#edb8cc"
 
-theme[download_start]="#c8bfff"
+theme[download_start]="#cabeff"
 theme[download_mid]="#c9c3dc"
-theme[download_end]="#ecb8cd"
+theme[download_end]="#edb8cc"
 
-theme[upload_start]="#c8bfff"
+theme[upload_start]="#cabeff"
 theme[upload_mid]="#c9c3dc"
-theme[upload_end]="#ecb8cd"
+theme[upload_end]="#edb8cc"
 
-theme[process_start]="#c8bfff"
+theme[process_start]="#cabeff"
 theme[process_mid]="#c9c3dc"
-theme[process_end]="#ecb8cd"
+theme[process_end]="#edb8cc"
