@@ -8,6 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // Font
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "ui_font_size": 16,
   "ui_font_family": "Cartograph CF",
   "buffer_font_size": 16,
@@ -42,13 +45,13 @@
     "emmet": true,
     "prisma": true,
     "env": true,
-    "colored-zed-icons-theme": true
+    "catppuccin-icons": true
   },
 
   // Icon Theme
   "icon_theme": {
     "mode": "dark",
-    "light": "Colored Zed Icons Theme Light",
-    "dark": "Colored Zed Icons Theme Dark"
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
   }
 }
