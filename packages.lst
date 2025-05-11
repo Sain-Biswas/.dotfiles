@@ -92,6 +92,7 @@ postman-bin
 rust-analyzer
 visual-studio-code-bin
 zed
+datagrip
 
 podman
 podman-desktop
