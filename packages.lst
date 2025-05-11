@@ -87,12 +87,13 @@ ttf-nerd-fonts-symbols
 # Development Related
 intellij-idea-ultimate-edition
 jdk-openjdk
-mongodb-compass
+#mongodb-compass
 postman-bin
 rust-analyzer
 visual-studio-code-bin
 zed
 datagrip
+datagrip-jre
 
 podman
 podman-desktop
