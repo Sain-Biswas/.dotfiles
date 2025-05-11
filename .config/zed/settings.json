@@ -12,9 +12,9 @@
     "edit_prediction_provider": "zed"
   },
   "ui_font_size": 16,
-  "ui_font_family": "Cartograph CF",
+  "ui_font_family": "Recursive Mono Casual Static",
   "buffer_font_size": 16,
-  "buffer_font_family": "Cartograph CF",
+  "buffer_font_family": "Recursive Mono Casual Static",
 
   // Theme
   "theme": {
