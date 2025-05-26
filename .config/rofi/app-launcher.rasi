@@ -64,7 +64,7 @@ listview {
     spacing:                     0em;
     padding:                     1em 2em 1em 2em;
     columns:                     1;
-    lines:                       8;
+    lines:                       6;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
