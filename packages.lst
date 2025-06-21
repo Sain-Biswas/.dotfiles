@@ -90,7 +90,7 @@ jdk-openjdk
 #mongodb-compass
 postman-bin
 rust-analyzer
-visual-studio-code-bin
+visual-studio-code-insiders-bin
 zed
 datagrip
 datagrip-jre
