@@ -1,15 +1,15 @@
-theme[main_bg]="#141318"
-theme[main_fg]="#e5e1e9"
+theme[main_bg]="#101418"
+theme[main_fg]="#e0e2e8"
 
-theme[title]="#c8bfff"
+theme[title]="#9ccbfb"
 
-theme[hi_fg]="#ecb8cd"
+theme[hi_fg]="#d4bee6"
 
-theme[selected_bg]="#c9c3dc"
+theme[selected_bg]="#b9c8da"
 
-theme[selected_fg]="#312e41"
+theme[selected_fg]="#243240"
 
-theme[inactive_fg]="#c9c3dc"
+theme[inactive_fg]="#b9c8da"
 
 theme[graph_text]="#ffb4ab"
 
@@ -24,38 +24,38 @@ theme[proc_box]="#ffb4ab"
 
 theme[div_line]="#ffb4ab"
 
-theme[temp_start]="#c8bfff"
-theme[temp_mid]="#c9c3dc"
-theme[temp_end]="#ecb8cd"
+theme[temp_start]="#9ccbfb"
+theme[temp_mid]="#b9c8da"
+theme[temp_end]="#d4bee6"
 
-theme[cpu_start]="#c8bfff"
-theme[cpu_mid]="#c9c3dc"
-theme[cpu_end]="#ecb8cd"
+theme[cpu_start]="#9ccbfb"
+theme[cpu_mid]="#b9c8da"
+theme[cpu_end]="#d4bee6"
 
-theme[free_start]="#c8bfff"
-theme[free_mid]="#c9c3dc"
-theme[free_end]="#ecb8cd"
+theme[free_start]="#9ccbfb"
+theme[free_mid]="#b9c8da"
+theme[free_end]="#d4bee6"
 
-theme[cached_start]="#c8bfff"
-theme[cached_mid]="#c9c3dc"
-theme[cached_end]="#ecb8cd"
+theme[cached_start]="#9ccbfb"
+theme[cached_mid]="#b9c8da"
+theme[cached_end]="#d4bee6"
 
-theme[available_start]="#c8bfff"
-theme[available_mid]="#c9c3dc"
-theme[available_end]="#ecb8cd"
+theme[available_start]="#9ccbfb"
+theme[available_mid]="#b9c8da"
+theme[available_end]="#d4bee6"
 
-theme[used_start]="#c8bfff"
-theme[used_mid]="#c9c3dc"
-theme[used_end]="#ecb8cd"
+theme[used_start]="#9ccbfb"
+theme[used_mid]="#b9c8da"
+theme[used_end]="#d4bee6"
 
-theme[download_start]="#c8bfff"
-theme[download_mid]="#c9c3dc"
-theme[download_end]="#ecb8cd"
+theme[download_start]="#9ccbfb"
+theme[download_mid]="#b9c8da"
+theme[download_end]="#d4bee6"
 
-theme[upload_start]="#c8bfff"
-theme[upload_mid]="#c9c3dc"
-theme[upload_end]="#ecb8cd"
+theme[upload_start]="#9ccbfb"
+theme[upload_mid]="#b9c8da"
+theme[upload_end]="#d4bee6"
 
-theme[process_start]="#c8bfff"
-theme[process_mid]="#c9c3dc"
-theme[process_end]="#ecb8cd"
+theme[process_start]="#9ccbfb"
+theme[process_mid]="#b9c8da"
+theme[process_end]="#d4bee6"
