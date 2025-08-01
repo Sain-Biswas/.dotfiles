@@ -64,7 +64,7 @@ listview {
     spacing:                     0em;
     padding:                     1em 2em 1em 2em;
     columns:                     1;
-    lines:                       6;
+    lines:                       11;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -84,7 +84,7 @@ dummy {
 element {
     enabled:                     true;
     spacing:                     1em;
-    padding:                     0.5em 0.5em 0.5em 1.5em;
+    padding:                     0.5em 0.5em 0.5em 0.5em;
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @on-surface;
@@ -95,7 +95,7 @@ element selected.normal {
     text-color:                  @on-primary;
 }
 element-icon {
-    size:                        2.2em;
+    size:                        1ch;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
