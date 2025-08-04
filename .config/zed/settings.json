@@ -7,8 +7,14 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  // Font
   // "vim_mode": true,
+  // Font
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    }
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -16,24 +22,20 @@
   "ui_font_family": "Rec Mono Casual",
   "buffer_font_size": 16,
   "buffer_font_family": "Rec Mono Casual",
-
   // Theme
   "theme": {
     "mode": "dark",
     "light": "Vercel Light",
     "dark": "Vercel Dark"
   },
-
   // Terminal
   "terminal": {
     "font_family": "Cartograph CF",
     "cursor_shape": "bar"
   },
-
   // Code
   "autosave": "on_focus_change",
   "format_on_save": "on",
-
   // Extensions
   "auto_install_extensions": {
     "html": true,
@@ -48,11 +50,43 @@
     "env": true,
     "catppuccin-icons": true
   },
-
   // Icon Theme
   "icon_theme": {
     "mode": "dark",
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha"
+  },
+
+  "languages": {
+    "TypeScript": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "JavaScript": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    }
   }
 }
