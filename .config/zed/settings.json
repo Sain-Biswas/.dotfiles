@@ -7,8 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  // "vim_mode": true,
-  // Font
+  // AI Assistant
   "agent": {
     "default_model": {
       "provider": "zed.dev",
@@ -16,26 +15,25 @@
     }
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
+
+  // Font
   "ui_font_size": 16,
   "ui_font_family": "Rec Mono Casual",
   "buffer_font_size": 16,
   "buffer_font_family": "Rec Mono Casual",
-  // Theme
-  "theme": {
-    "mode": "dark",
-    "light": "Vercel Light",
-    "dark": "Vercel Dark"
-  },
+
   // Terminal
   "terminal": {
     "font_family": "Cartograph CF",
     "cursor_shape": "bar"
   },
+
   // Code
   "autosave": "on_focus_change",
   "format_on_save": "on",
+
   // Extensions
   "auto_install_extensions": {
     "html": true,
@@ -48,8 +46,19 @@
     "emmet": true,
     "prisma": true,
     "env": true,
-    "catppuccin-icons": true
+    "catppuccin-icons": true,
+    "hyprlang": true,
+    "dockerfile": true,
+    "docker-compose": true
   },
+
+  // Theme
+  "theme": {
+    "mode": "dark",
+    "light": "Vercel Light",
+    "dark": "Vercel Dark"
+  },
+
   // Icon Theme
   "icon_theme": {
     "mode": "dark",
@@ -57,6 +66,24 @@
     "dark": "Catppuccin Mocha"
   },
 
+  // Looks
+  "project_panel": {
+    "dock": "right",
+    "auto_fold_dirs": false,
+    "indent_size": 40,
+    "scrollbar": {
+      "show": "auto"
+    }
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "right"
+  },
+
+  // Language Settings
   "languages": {
     "TypeScript": {
       "formatter": {
