@@ -39,17 +39,17 @@
     "html": true,
     "toml": true,
     "git-firefly": true,
+    "dockerfile": true,
+    "scss": true,
     "svelte": true,
     "lua": true,
-    "scss": true,
+    "catppuccin-icons": true,
     "astro": true,
+    "docker-compose": true,
     "emmet": true,
     "prisma": true,
     "env": true,
-    "catppuccin-icons": true,
-    "hyprlang": true,
-    "dockerfile": true,
-    "docker-compose": true
+    "hyprlang": true
   },
 
   // Theme
