@@ -5,7 +5,7 @@
  */
 
 * {
-    font :                        "Cartograph CF 14";
+    font :                        "DankMono Nerd Font 16";
 
     primary:                      {{colors.primary.default.hex}};
     primary-fixed:                {{colors.primary_fixed.default.hex}};

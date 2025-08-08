@@ -5,7 +5,7 @@
  */
 
 * {
-    font :                        "Cartograph CF 14";
+    font :                        "DankMono Nerd Font 16";
 
     primary:                      #e4b7f3;
     primary-fixed:                #f7d8ff;

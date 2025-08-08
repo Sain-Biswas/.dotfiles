@@ -1,9 +1,24 @@
 gtk-titlebar = false
-background-opacity = 0.80
 
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+confirm-close-surface = false
+
+window-decoration = true
 window-padding-x = 10
-window-padding-y = 5
+window-padding-y = 10
+window-padding-balance = true
 
-theme = pywal
+font-family = "DankMono Nerd Font"
+font-size = 16
 
-font-size = 14
+# Theme pywal
+# theme = pywal
+# background-opacity = 0.80
+
+# Theme Constant
+theme = rose-pine
+background = #000000
+background-opacity = 0.80
+background-blur-radius = 15
