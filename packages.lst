@@ -37,6 +37,8 @@ python-pip
 gnome-keyring
 libsecret
 seahorse
+wtype
+
 
 # Utilities
 brightnessctl
@@ -49,6 +51,8 @@ eza
 fastfetch
 less
 unzip
+tmux
+rofi-emoji
 
 # Audio
 gst-plugin-pipewire
@@ -106,6 +110,8 @@ brave-bin
 profile-sync-daemon-brave
 firefox-developer-edition
 google-chrome
+vivaldi
+vivaldi-ffmpeg-codecs
 
 # Theming
 nwg-look
