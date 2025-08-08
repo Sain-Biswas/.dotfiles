@@ -40,7 +40,9 @@ zinit cdreplay -q
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Keybindings
-bindkey -e
+bindkey -v
+set -o vi
+bindkey -M viins '^e' autosuggest-accept
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
@@ -67,6 +69,12 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -a --color=always $real
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# Vim Ediging
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+
 
 # Source external files
 source ~/.dotfiles/alias.zsh
