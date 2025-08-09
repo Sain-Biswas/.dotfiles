@@ -74,11 +74,10 @@ eval "$(zoxide init --cmd cd zsh)"
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-
-
 # Source external files
 source ~/.dotfiles/alias.zsh
-source ~/.dotfiles/matugen.zsh
+# source ~/.dotfiles/matugen.zsh
+source ~/.dotfiles/rose-pine.zsh
 
 # Scripts
 export PATH="$HOME/.dotfiles/scripts/theme:$PATH"

@@ -1,6 +1,7 @@
 gtk-titlebar = false
 
 cursor-style-blink = false
+cursor-style = bar
 shell-integration-features = no-cursor
 
 confirm-close-surface = false
