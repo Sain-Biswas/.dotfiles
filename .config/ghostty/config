@@ -11,6 +11,7 @@ window-padding-y = 10
 window-padding-balance = true
 
 font-family = "DankMono Nerd Font"
+#font-family = "OperatorMonoLig Nerd Font Mono"
 font-size = 16
 
 # Theme pywal

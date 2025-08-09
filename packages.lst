@@ -1,159 +1,137 @@
-# Needed System Packages
-rust
-go
-ntfs-3g
-stow
+# System Packages
+base
 base-devel
-curl
-wget
-
-# Core Hyprland packages
-hyprland
-xdg-desktop-portal-hyprland
-sddm
-
-# Hyprland Ecosystem
-hyprpicker
-hyprlock
-hypridle
-
-# Terminal
-ghostty
-zsh
-warp-terminal
-
-# Other Needed Packages
-polkit-gnome
-neovim
-nautilus
-rofi
-loupe
-libheif
-vlc
-ffmpeg
-telegram-desktop
-gnome-disk-utility
-python-pip
-gnome-keyring
-libsecret
-seahorse
-wtype
-
-
-# Utilities
-brightnessctl
-playerctl
-btop
-bat
-fzf
-zoxide
-eza
-fastfetch
-less
-unzip
-tmux
-rofi-emoji
-
-# Audio
-gst-plugin-pipewire
-pipewire
-wireplumber
-pipewire-alsa
-pipewire-audio
-pipewire-pulse
-pipewire-jack
-pavucontrol
-pamixer
-
-# Status Bar
-waybar
-otf-font-awesome
-
-# Notification Daemon
-swaync
-
-# Wifi Setup
-networkmanager
-nm-connection-editor
-network-manager-applet
-
-# Bluetooth
+blueman
 bluez
 bluez-utils
-blueman
+btrfs-progs
+efibootmgr
+grub
+gst-plugin-pipewire
+hyprland
+intel-ucode
+linux
+linux-firmware
+network-manager-applet
+networkmanager
+nm-connection-editor
+ntfs-3g
+os-prober
+pamixer
+pavucontrol
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-jack
+pipewire-pulse
+polkit-gnome
+python-pip
+sddm
+sof-firmware
+wget
+wireplumber
+wtype
+xdg-desktop-portal-hyprland
+
+# Terminal
+bat
+btop
+dysk
+eza
+fastfetch
+fzf
+ghostty
+git
+tldr
+tmux
+#warp-terminal
+zoxide
+zsh
+
+# Utilities
+bleachbit
+brightnessctl
+cliphist
+ffmpeg
+gnome-calculator
+gnome-disk-utility
+gnome-keyring
+grim
+hypridle
+hyprlock
+hyprpicker
+less
+loupe
+nautilus
+playerctl
+rofi
+rofi-emoji
+seahorse
+slurp
+snapshot
+stow
+swappy
+swaync
+unzip
+vlc
+waybar
 
 # Fonts
 noto-fonts
-noto-fonts-emoji
 noto-fonts-cjk
-ttf-nerd-fonts-symbols
+noto-fonts-emoji
+otf-font-awesome
 
 # Development Related
-intellij-idea-ultimate-edition
+go
+gopls
 jdk-openjdk
-#mongodb-compass
+neovim
+podman
+podman-compose
+podman-desktop
 postman-bin
+rust
 rust-analyzer
 visual-studio-code-insiders-bin
 zed
-datagrip
-datagrip-jre
-
-podman
-podman-desktop
-podman-compose
 
 # Browsers
-chromium
-zen-browser-bin
 brave-bin
-profile-sync-daemon-brave
+chromium
 firefox-developer-edition
 google-chrome
+profile-sync-daemon-brave
 vivaldi
 vivaldi-ffmpeg-codecs
+zen-browser-bin
 
 # Theming
-nwg-look
-python-pywal16
-matugen-bin
-spicetify-cli
-python-pywalfox
-wal-telegram-git
 adw-gtk-theme
-swww
+bibata-cursor-theme-bin
 kvantum
 kvantum-qt5
+matugen-bin
+nwg-look
+python-pywal16
+python-pywalfox
 qt5-wayland
-qt6-wayland
 qt5ct
+qt6-wayland
 qt6ct
-tela-circle-icon-theme-black
-tela-circle-icon-theme-blue
+spicetify-cli
+swww
 tela-circle-icon-theme-dracula
-tela-circle-icon-theme-green
-tela-circle-icon-theme-orange
-tela-circle-icon-theme-pink
 tela-circle-icon-theme-purple
-tela-circle-icon-theme-red
-tela-circle-icon-theme-yellow
-bibata-cursor-theme-bin
-
-# Screen Shot
-grim
-slurp
-swappy
-
-# Clipboard
-cliphist
+wal-telegram-git
 
 # Entertainment
 spotify
+telegram-desktop
 
 # Others
-openssl
-file
-webkit2gtk-4.1
 appmenu-gtk-module
 libappindicator-gtk3
+libheif
 librsvg
+webkit2gtk-4.1

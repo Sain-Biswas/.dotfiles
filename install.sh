@@ -29,9 +29,9 @@ cd src/paru
 cargo clean
 
 # Add warp terminal repo to pacman
-sudo sh -c "echo -e '\n[warpdotdev]\nServer = https://releases.warp.dev/linux/pacman/\$repo/\$arch' >> /etc/pacman.conf"
-sudo pacman-key -r "linux-maintainers@warp.dev"
-sudo pacman-key --lsign-key "linux-maintainers@warp.dev"
+# sudo sh -c "echo -e '\n[warpdotdev]\nServer = https://releases.warp.dev/linux/pacman/\$repo/\$arch' >> /etc/pacman.conf"
+# sudo pacman-key -r "linux-maintainers@warp.dev"
+# sudo pacman-key --lsign-key "linux-maintainers@warp.dev"
 sudo pacman -Syyu
 
 # Install Packages
