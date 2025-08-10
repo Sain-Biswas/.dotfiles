@@ -10,7 +10,7 @@ size = 16
 
 [cursor.style]
 shape = "Beam"
-blinking = "Off"
+blinking =  "On"
 
 [window]
 decorations = "none"
