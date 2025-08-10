@@ -7,13 +7,13 @@ selection-background = c7c2c5
 selection-foreground = 200e18
 
 palette = 0=#200e18
-palette = 1=#672CA5
-palette = 2=#6D41AB
-palette = 3=#9766AD
-palette = 4=#9537C5
-palette = 5=#A860D1
-palette = 6=#2DD1BD
-palette = 7=#c7c2c5
+palette = 1=#4d217b
+palette = 2=#513080
+palette = 3=#714c81
+palette = 4=#6f2993
+palette = 5=#7e489c
+palette = 6=#219c8d
+palette = 7=#9b9097
 palette = 8=#725d67
 palette = 9=#672CA5
 palette = 10=#6D41AB
