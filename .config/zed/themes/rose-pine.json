@@ -1,16 +1,17 @@
 {
   "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
   "name": "Rosé Pine",
-  "author": "Kainoa Kanter <kainoa@t1c.dev>",
+  "author": "Sain Biswas <sain.biswas614@gmail.com>",
+  "description": "A dark theme inspired by the Rosé Pine color palette. Forked from Kainoa Kanter <kainoa@t1c.dev>",
   "themes": [
     {
       "appearance": "dark",
       "name": "Rosé Pine",
       "style": {
         "editor.foreground": "#e0def4",
-        "editor.background": "#191724",
-        "editor.gutter.background": "#191724",
-        "editor.active_line.background": "#1f1d2e",
+        "editor.background": "#0a0a0a",
+        "editor.gutter.background": "#0a0a0a",
+        "editor.active_line.background": "#ffffff1f",
         "editor.line_number": "#6e6a86",
         "editor.active_line_number": "#e0def4",
         "editor.indent_guide": "#6e6a8688",
@@ -39,15 +40,15 @@
         "text.accent": "#9ccfd8",
         "surface.background": "#1f1d2e",
         "elevated_surface.background": "#1f1d2e",
-        "panel.background": "#191724",
+        "panel.background": "#000000",
         "panel.focused_border": "#c4a7e744",
         "background": "#191724",
-        "status_bar.background": "#191724",
-        "title_bar.background": "#191724",
+        "status_bar.background": "#000000",
+        "title_bar.background": "#000000",
         "title_bar.inactive_background": "#191724",
-        "toolbar.background": "#191724",
-        "tab_bar.background": "#1f1d2e",
-        "tab.inactive_background": "#1f1d2e",
+        "toolbar.background": "#000000",
+        "tab_bar.background": "#000000",
+        "tab.inactive_background": "#000000",
         "tab.active_background": "#191724",
         "element.background": "#1f1d2e",
         "element.hover": "#26233a",
@@ -74,7 +75,7 @@
         "scrollbar.thumb.border": "#21202e4d",
         "scrollbar.track.background": "#00000000",
         "scrollbar.track.border": "#21202e4d",
-        "terminal.background": "#191724",
+        "terminal.background": "#000000",
         "terminal.foreground": "#e0def4",
         "terminal.bright_foreground": "#e0def4",
         "terminal.dim_foreground": "#191724",
@@ -163,10 +164,12 @@
         ],
         "syntax": {
           "attribute": {
-            "color": "#908caa"
+            "color": "#908caa",
+            "font_style": "italic"
           },
           "boolean": {
-            "color": "#ebbcba"
+            "color": "#ebbcba",
+            "font_style": "italic"
           },
           "comment": {
             "color": "#6e6a86",
@@ -176,10 +179,12 @@
             "color": "#908caa"
           },
           "constant": {
-            "color": "#e0def4"
+            "color": "#e0def4",
+            "font_style": "italic"
           },
           "constructor": {
-            "color": "#eb6f92"
+            "color": "#eb6f92",
+            "font_style": "italic"
           },
           "embedded": {
             "color": "#e0def4"
@@ -196,13 +201,15 @@
             "color": "#31748f"
           },
           "function": {
-            "color": "#ebbcba"
+            "color": "#ebbcba",
+            "font_style": "italic"
           },
           "hint": {
             "color": "#c4a7e7"
           },
           "keyword": {
-            "color": "#31748f"
+            "color": "#31748f",
+            "font_style": "italic"
           },
           "label": {
             "color": "#ebbcba"
@@ -211,13 +218,15 @@
             "color": "#c4a7e7"
           },
           "link_uri": {
-            "color": "#31748f"
+            "color": "#31748f",
+            "font_style": "italic"
           },
           "number": {
             "color": "#9ccfd8"
           },
           "operator": {
-            "color": "#908caa"
+            "color": "#908caa",
+            "font_style": "italic"
           },
           "predictive": {
             "color": "#908caa"
@@ -229,7 +238,8 @@
             "color": "#c4a7e7"
           },
           "property": {
-            "color": "#e0def4"
+            "color": "#e0def4",
+            "font_style": "italic"
           },
           "punctuation": {
             "color": "#908caa"
@@ -248,7 +258,8 @@
             "color": "#31748f"
           },
           "string": {
-            "color": "#f6c177"
+            "color": "#f6c177",
+            "font_style": "italic"
           },
           "string.escape": {
             "color": "#f6c177"
@@ -263,7 +274,8 @@
             "color": "#31748f"
           },
           "tag": {
-            "color": "#c4a7e7"
+            "color": "#c4a7e7",
+            "font_style": "italic"
           },
           "text.literal": {
             "color": "#f6c177"
