@@ -11,7 +11,7 @@
         "editor.foreground": "#e0def4",
         "editor.background": "#0a0a0a",
         "editor.gutter.background": "#0a0a0a",
-        "editor.active_line.background": "#ffffff1f",
+        "editor.active_line.background": "#ffffff06",
         "editor.line_number": "#6e6a86",
         "editor.active_line_number": "#e0def4",
         "editor.indent_guide": "#6e6a8688",

@@ -26,6 +26,7 @@ matugen image "$IMAGE"
 
 # Update pywal colors to ghostty
 cat ~/.cache/wal/ghostty.conf > ~/.dotfiles/.config/ghostty/themes/pywal
+cat ~/.cache/wal/colors-alacritty.toml > ~/.dotfiles/.config/alacritty/themes/pywal.toml
 
 # Update pywal colors to warp terminal
 # mkdir -p ~/.local/share/warp-terminal/themes/

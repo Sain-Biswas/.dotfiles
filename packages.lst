@@ -34,13 +34,13 @@ wtype
 xdg-desktop-portal-hyprland
 
 # Terminal
+alacritty
 bat
 btop
 dysk
 eza
 fastfetch
 fzf
-ghostty
 git
 tldr
 tmux
@@ -100,7 +100,6 @@ firefox-developer-edition
 google-chrome
 vivaldi
 vivaldi-ffmpeg-codecs
-zen-browser-bin
 
 # Theming
 adw-gtk-theme
