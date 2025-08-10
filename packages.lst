@@ -91,7 +91,6 @@ podman
 podman-desktop
 postman-bin
 rust
-rust-analyzer
 visual-studio-code-insiders-bin
 zed
 
