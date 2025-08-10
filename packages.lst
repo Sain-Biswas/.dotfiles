@@ -88,7 +88,6 @@ gopls
 jdk-openjdk
 neovim
 podman
-podman-compose
 podman-desktop
 postman-bin
 rust
@@ -97,11 +96,9 @@ visual-studio-code-insiders-bin
 zed
 
 # Browsers
-brave-bin
 chromium
 firefox-developer-edition
 google-chrome
-profile-sync-daemon-brave
 vivaldi
 vivaldi-ffmpeg-codecs
 zen-browser-bin
