@@ -62,6 +62,6 @@
     surface-container-high:       #2d282e;
     surface-container-highest:    #383339;
 
-    image-width:                  url("/home/sainbiswas/.dotfiles/wallpapers/modern-retro.jpg", width);
-    image-height:                 url("/home/sainbiswas/.dotfiles/wallpapers/modern-retro.jpg", height);
+    image-width:                  url("/home/sain-biswas/.dotfiles/wallpapers/modern-retro.jpg", width);
+    image-height:                 url("/home/sain-biswas/.dotfiles/wallpapers/modern-retro.jpg", height);
 }

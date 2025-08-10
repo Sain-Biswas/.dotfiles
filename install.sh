@@ -53,6 +53,9 @@ curl -fsSL https://bun.sh/install | sh
 # Install pnpm
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 
+# TPM install
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # Change default shell to zsh
 chsh -s /usr/bin/zsh
 
