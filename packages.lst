@@ -34,13 +34,13 @@ wtype
 xdg-desktop-portal-hyprland
 
 # Terminal
-alacritty
 bat
 btop
 dysk
 eza
 fastfetch
 fzf
+ghostty
 git
 tldr
 tmux
