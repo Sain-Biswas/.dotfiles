@@ -1,0 +1,92 @@
+#! /usr/bin/env bash
+
+# -----------------------------------------------------------------------------------------------------------------
+# Install essential base development tools required for environment setup.
+#   - rust: needed for many AUR packages and rust-based tools
+#   - stow: used for managing dotfiles with symlink management
+#   - go: required for Go-based utilities
+#
+# The flags used:
+#   -Syyu     : force refresh package databases and update the system
+#   --needed  : skip reinstalling packages already installed
+#   --noconfirm : avoid interactive prompts
+# -----------------------------------------------------------------------------------------------------------------
+sudo pacman -Syyu --needed --noconfirm rust stow go
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Create core directories in the home folder:
+#   ~/.config : standard config directory
+#   ~/.local  : user-specific executables, libraries & data
+#   ~/Github  : workspace for cloning GitHub repositories
+# -----------------------------------------------------------------------------------------------------------------
+cd ~
+mkdir -p .config .local Github
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Use GNU Stow to symlink dotfiles from ~/.dotfiles to their proper
+# locations in the system. This allows clean and reversible dotfile management.
+# -----------------------------------------------------------------------------------------------------------------
+cd ~/.dotfiles
+stow .
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Install Paru (AUR helper) from the AUR manually:
+#   1. Clone paru-git from AUR
+#   2. Build and install using makepkg
+#   3. Clean cargo build artifacts to reduce disk usage
+# -----------------------------------------------------------------------------------------------------------------
+cd ~/Github
+git clone https://aur.archlinux.org/paru-git.git
+cd paru-git
+makepkg -si
+cd src/paru
+cargo clean
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Update system and AUR packages using Paru.
+# -----------------------------------------------------------------------------------------------------------------
+paru -Syyu
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Install all packages listed in dotfiles' package list.
+# The list should contain package names (one per line).
+# -----------------------------------------------------------------------------------------------------------------
+paru -S --needed - < ~/.dotfiles/packages.list
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Configure Git:
+#   safe.directory "*" -> allows Git to trust all directories (fixes permission warnings)
+#   credential.helper store -> persist credentials locally to avoid repeated logins
+# -----------------------------------------------------------------------------------------------------------------
+git config --global --add safe.directory "*"
+git config --global credential.helper store
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Clean Paru cache to reduce disk usage.
+# -----------------------------------------------------------------------------------------------------------------
+paru -Sccc
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Enable systemd user services for Hyprland components:
+#   - hyprpaper : wallpaper daemon for Hyprland
+#   - waybar    : bar/status display for Wayland
+# These services will start automatically in the user session.
+# -----------------------------------------------------------------------------------------------------------------
+systemctl --user enable hyprpaper.service
+systemctl --user enable waybar.service
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Enable SDDM login manager and set the default target to graphical.
+# This ensures the system boots directly into a graphical session.
+# -----------------------------------------------------------------------------------------------------------------
+sudo systemctl enable sddm
+sudo systemctl set-default graphical.target
