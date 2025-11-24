@@ -1,0 +1,10 @@
+
+
+# Configure system cursor size for x11 applications
+export XCURSOR_SIZE=24
+
+# Configure the default editor to use
+export EDITOR=nvim
+
+# Directory to store Screenshots
+export SCREENSHOT_DIR="$HOME/Pictures/Screenshots"
