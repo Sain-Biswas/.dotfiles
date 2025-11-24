@@ -22,7 +22,7 @@
  * Opacity: 0.75 (slightly transparent)
  */
 <* for name, value in colors *>
-    @define-color {{name}}_soft {{value.default.rgba | set_alpha:0.75}};
+    @define-color {{name}}_soft {{value.default.rgba | set_alpha: 0.75}};
 <* endfor *>
 
 /**
@@ -36,5 +36,5 @@
  * Opacity: 0.5 (moderately transparent)
  */
 <* for name, value in colors *>
-    @define-color {{name}}_fade {{value.default.rgba | set_alpha:0.5}};
+    @define-color {{name}}_fade {{value.default.rgba | set_alpha: 0.5}};
 <* endfor *>

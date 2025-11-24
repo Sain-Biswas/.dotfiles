@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_whitespaces": "all",
   "icon_theme": "Catppuccin Mocha",
 
   "ui_font_size": 16,
@@ -16,8 +17,8 @@
   "buffer_font_family": "CaskaydiaCove Nerd Font",
 
   "theme": {
-    "mode": "system",
-    "light": "Vercel Dark",
+    "mode": "dark",
+    "light": "Vercel Light",
     "dark": "Vercel Dark"
   },
 
