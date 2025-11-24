@@ -1,0 +1,36 @@
+#! /usr/bin/env bash
+
+# Ensure the argument is not an empty string
+if [[ -z "$1" ]]; then
+    echo "Error: No application name provided."
+    echo "Usage: restart-uwsm-app <application-name>"
+    exit 1
+fi
+
+# Display a help text on --help and -h arguments
+if [[ $# -eq 0 || "$1" == "--help" || "$1" == "-h" ]]; then
+    cat <<EOF
+    This script restarts a given application by name.
+
+    1. Terminates any running instance of the specified application using `pkill -x`,
+       which ensures only processes matching the exact name are targeted.
+
+    2. Launches the application again in a fully detached session using `setsid`,
+       ensuring it continues running independently of the terminal.
+
+    3. All output (stdout and stderr) is discarded to keep the terminal clean.
+
+    Usage:
+        restart-uwsm-app <application-name>
+
+    Example:
+        restart-uwsm-app firefox
+
+    This ensures a clean restart of the app without requiring user interaction.
+EOF
+    exit 0
+fi
+
+# Restart the provided application
+pkill -x $1
+setsid uwsm-app -- $1 >/dev/null 2>&1 &

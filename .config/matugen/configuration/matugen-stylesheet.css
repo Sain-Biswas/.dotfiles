@@ -1,0 +1,40 @@
+/**
+ * Base solid color variables.
+ *
+ * These variables represent the core color palette without any transparency applied.
+ * They are primarily used for elements that require fully opaque colors, such as
+ * borders, text, and foreground components where clarity and contrast are important.
+ *
+ * Opacity: 1 (fully opaque)
+ */
+<* for name, value in colors *>
+    @define-color {{name}} {{value.default.rgba}};
+<* endfor *>
+
+/**
+ * Mildly transparent color variables.
+ *
+ * These colors include a slight level of transparency and are intended for use in
+ * layered interfaces where subtle blending is helpful—for example, backgrounds behind
+ * text, overlays, or components where softened colors improve readability without
+ * drawing too much attention.
+ *
+ * Opacity: 0.75 (slightly transparent)
+ */
+<* for name, value in colors *>
+    @define-color {{name}}_soft {{value.default.rgba | set_alpha:0.75}};
+<* endfor *>
+
+/**
+ * Blurred/low-opacity color variables.
+ *
+ * These colors have a higher degree of transparency and are best suited for lower-
+ * priority visual layers, such as blurred backgrounds, shadows, depth effects, or
+ * atmospheric UI elements. They help create separation between layers without
+ * overwhelming the main content.
+ *
+ * Opacity: 0.5 (moderately transparent)
+ */
+<* for name, value in colors *>
+    @define-color {{name}}_fade {{value.default.rgba | set_alpha:0.5}};
+<* endfor *>
