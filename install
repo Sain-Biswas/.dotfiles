@@ -21,7 +21,7 @@ sudo pacman -Syyu --needed --noconfirm rust stow go
 #   ~/Github  : workspace for cloning GitHub repositories
 # -----------------------------------------------------------------------------------------------------------------
 cd ~
-mkdir -p .config .local Github
+mkdir -p .config .local/bin Github
 
 
 # -----------------------------------------------------------------------------------------------------------------
@@ -66,6 +66,38 @@ paru -S --needed - < ~/.dotfiles/packages.list
 # -----------------------------------------------------------------------------------------------------------------
 git config --global --add safe.directory "*"
 git config --global credential.helper store
+
+
+# --------------------------------------------------------------------
+# Install NVM (Node Version Manager)
+#   - Downloads and runs the official nvm installer script
+#   - Sets NVM_DIR to ~/.config/nvm (cleaner, XDG-compliant location)
+#   - Loads nvm and its bash completion if available
+#   - Installs Node.js v24
+# --------------------------------------------------------------------
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+nvm install 24
+
+
+# --------------------------------------------------------------------
+# Install pnpm (Fast Node package manager)
+#   - Uses the official installation script
+#   - Automatically configures shell integration
+# --------------------------------------------------------------------
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+
+# --------------------------------------------------------------------
+# Install Bun (JavaScript runtime & package manager)
+#   - Uses the official Bun install script
+#   - Adds bun to PATH via ~/.bun/bin
+# --------------------------------------------------------------------
+curl -fsSL https://bun.sh/install | bash
 
 
 # -----------------------------------------------------------------------------------------------------------------
