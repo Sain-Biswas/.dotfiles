@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+
+##############################################################################
+# This command adjusts the system clock configuration on Linux systems that use
+# systemd and timedatectl. By default, Linux expects the hardware clock (RTC)
+# to be in UTC. Some dual-boot setups (e.g., Windows + Linux) require the RTC
+# to be in local time instead.
+#
+# The following command does two things:
+#
+# 1. set-local-rtc 1
+#      - Instructs systemd-timedated that the hardware clock (RTC)
+#        is stored in local time instead of UTC.
+#
+# 2. --adjust-system-clock
+#      - Adjusts the current system time to compensate for this change,
+#        ensuring the system time remains accurate after switching to
+#        local RTC mode.
+#
+# WARNING:
+#    Using a local-time RTC is generally *not recommended* for Linux-only
+#    systems because it may lead to time drift or issues during DST changes.
+#    It is primarily recommended only for dual-boot environments where
+#    Windows expects the hardware clock to be in local time.
+###############################################################################
+
+# Prompt the user
+read -rp "Is this system a dual-boot setup (Windows + Linux)? [y/N]: " answer
+
+# Normalize input to lowercase
+answer="${answer,,}"
+
+if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
+    echo "Configuring RTC to use local time..."
+    timedatectl set-local-rtc 1 --adjust-system-clock
+
+    echo "RTC updated to use local time (dual-boot mode)."
+else
+    echo "No changes made. RTC remains in UTC mode."
+fi
+
+##############################################################################
+# Configure Git global identity
+#
+# Git requires a username and email to associate with each commit.
+# These global settings apply to all repositories for the current user
+# unless overridden by repository-specific settings.
+#
+# 1. user.name
+#      - The name that will appear in the "author" field of your commits.
+#
+# 2. user.email
+#      - The email associated with your commits. This should ideally match
+#        the email registered with your Git hosting provider (GitHub,
+#        GitLab, Bitbucket, etc.) for proper attribution.
+#
+# NOTE:
+#    You can verify your configuration anytime using:
+#       git config --global --list
+##############################################################################
+
+# Promt user to get username and email
+read -rp "Enter your Git username: " git_username
+read -rp "Enter your Git email: " git_email
+
+git config --global user.name "$git_username"
+git config --global user.email "$git_email"

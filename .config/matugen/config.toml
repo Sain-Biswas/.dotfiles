@@ -5,3 +5,8 @@
 input_path = '~/.dotfiles/.config/matugen/configuration/matugen-stylesheet.css'
 output_path = '~/.dotfiles/.config/waybar/colors.css'
 post_hook = 'restart-uwsm-app waybar'
+
+# Ghostty color configuration
+[templates.waybar]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-ghostty'
+output_path = '~/.dotfiles/.config/wal/templates/colors-ghostty'
