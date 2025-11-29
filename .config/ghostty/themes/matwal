@@ -1,25 +1,25 @@
 # matugen pywal color configuration file for ghostty
 
-palette = 0=#0f1924
-palette = 1=#CB7B85
-palette = 2=#B79DA0
-palette = 3=#C58980
-palette = 4=#F19292
-palette = 5=#EBA39E
-palette = 6=#F99AA2
-palette = 7=#c3c5c8
-palette = 8=#5e6874
-palette = 9=#CB7B85
-palette = 10=#B79DA0
-palette = 11=#C58980
-palette = 12=#F19292
-palette = 13=#EBA39E
-palette = 14=#F99AA2
-palette = 15=#c3c5c8
+palette = 0=#1f0d0d
+palette = 1=#a88541
+palette = 2=#4e5d6e
+palette = 3=#7a7571
+palette = 4=#958780
+palette = 5=#9d958a
+palette = 6=#818f9b
+palette = 7=#9b9090
+palette = 8=#715c5c
+palette = 9=#E1B257
+palette = 10=#697C93
+palette = 11=#A39C97
+palette = 12=#C7B5AB
+palette = 13=#D2C7B8
+palette = 14=#ADBFCF
+palette = 15=#c7c2c2
 
-background = #1a1111
-foreground = #f0dedd
-cursor-color = #733333
-cursor-text = #ffdad8
-selection-background = #5a4319
-selection-foreground = #ffdeab
+background = #1a110f
+foreground = #f1dfda
+cursor-color = #723425
+cursor-text = #ffdad2
+selection-background = #544519
+selection-foreground = #f7e1a6

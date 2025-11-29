@@ -20,4 +20,8 @@ echo "wallpaper = , $IMAGE_PATH" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
 
 matugen image "$IMAGE_PATH"
 
+wal --cols16 -i "$IMAGE_PATH"
+
+cat ~/.cache/wal/colors-ghostty > ~/.dotfiles/.config/ghostty/themes/matwal
+
 hyprctl hyprpaper reload , "$IMAGE_PATH"
