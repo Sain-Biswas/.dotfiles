@@ -1,0 +1,23 @@
+#! /usr/bin/env bash
+
+set -e
+
+if [[ -z $1 ]]; then
+    echo "Error: No Image file path provided."
+    echo "Usage: update-wallpaper-theme <image-path-to-use>"
+    exit 1
+fi
+
+IMAGE_PATH="$1"
+
+if [ ! -f "$IMAGE_PATH" ]; then
+    echo "Error: File not found - $IMAGE_PATH"
+    exit 1
+fi
+
+echo "preload = $IMAGE_PATH" > ~/.dotfiles/.config/hypr/hyprpaper.conf
+echo "wallpaper = , $IMAGE_PATH" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
+
+matugen image "$IMAGE_PATH"
+
+hyprctl hyprpaper reload , "$IMAGE_PATH"
