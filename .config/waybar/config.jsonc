@@ -2,131 +2,140 @@
   "height": 30,
   "spacing": 0,
 
-  "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/mode",
-    "hyprland/scratchpad",
-    "custom/media",
-  ],
+  "modules-left": ["clock", "wlr/taskbar", "mpris"],
 
-  "modules-center": ["hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
 
   "modules-right": [
-    "mpd",
-    "idle_inhibitor",
     "pulseaudio",
-    "network",
-    "power-profiles-daemon",
-    "cpu",
-    "memory",
-    "temperature",
     "backlight",
-    "keyboard-state",
-    "hyprland/language",
-    "battery",
-    "battery#bat2",
-    "clock",
+    "power-profiles-daemon",
+    "idle_inhibitor",
+    "network",
+    "bluetooth",
     "tray",
-    "custom/power",
+    "custom/swaync",
+    "battery",
   ],
 
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "",
-      "unlocked": "",
-    },
-  },
-
-  "hyprland/mode": {
-    "format": "<span style=\"italic\">{}</span>",
-  },
-
-  "hyprland/scratchpad": {
-    "format": "{icon} {count}",
-    "show-empty": false,
-    "format-icons": ["", ""],
+  "custom/swaync": {
     "tooltip": true,
-    "tooltip-format": "{app}: {title}",
+    "tooltip-format": "Left Click -> Launch Notification Center\nRight Click -> Do not Disturb",
+    "format": "{icon} {text}",
+    "format-icons": {
+      "notification": "",
+      "none": "",
+      "dnd-notification": "",
+      "dnd-none": "",
+      "inhibited-notification": "󱏨",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "󱏪",
+      "dnd-inhibited-none": "",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
   },
 
-  "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "unknown-tag": "N/A",
-    "interval": 5,
-    "consume-icons": {
-      "on": " ",
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "tooltip-format": "Title -> {title}\nName -> {name}\nApp ID -> {app_id}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition",
     },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
-      "on": " ",
+    "rewrite": {
+      "Firefox Web Browser": "Firefox",
+      "Foot Server": "Terminal",
     },
-    "repeat-icons": {
-      "on": " ",
+  },
+
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "{status_icon} <i>{title}</i>",
+    "tooltip-format": "Source -> {player_icon}  {player}\nTitle -> {title}\nArtist -> {artist}\nAlbum -> {album}\nLength -> {length}\nStatus -> {status_icon}  {status}",
+    "player-icons": {
+      "default": "󰎆",
+      "mpv": "🎵",
+      "firefox": "󰈹 /󰫫",
+      "youtube": "",
+      "vivaldi": "",
+      "spotify": "󰓇",
     },
-    "single-icons": {
-      "on": "1 ",
+    "status-icons": {
+      "paused": "",
+      "playing": "",
+      "Stopped": "",
     },
-    "state-icons": {
-      "paused": "",
-      "playing": "",
+    "title-len": 30,
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": "󰑊",
     },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)",
+    "persistent-workspaces": {
+      "*": 10,
+    },
   },
 
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": "",
+      "activated": "󰅶",
+      "deactivated": "󰾪",
     },
+    "tooltip-format-activated": "Activated",
+    "tooltip-format-deactivated": "Deactivated",
   },
 
   "tray": {
-    "spacing": 10,
+    "icon-size": 16,
+    "spacing": 5,
+    "show-passive-items": true,
   },
 
   "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}",
-  },
-
-  "cpu": {
-    "format": "{usage}% ",
-    "tooltip": false,
-  },
-
-  "memory": {
-    "format": "{}% ",
-  },
-
-  "temperature": {
-    "critical-threshold": 80,
-    "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""],
+    "interval": 30,
+    "format": "  {:%I:%M%p}",
+    "format-alt": "󰸗 {:%A, %B %Od %Y}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 4,
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down",
+    },
   },
 
   "backlight": {
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "tooltip": false,
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃚", "󰃛", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"],
   },
 
   "battery": {
+    "bat": "BAT0",
+    "interval": 60,
     "states": {
       "warning": 30,
       "critical": 15,
     },
-    "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
+    "format": "{icon} {capacity}%",
+    "format-full": " {capacity}%",
+    "format-charging": " {capacity}%",
     "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "Power : {power}W \nHealth : {health}% \nCharge cycles : {cycles} \nCurrent status : {timeTo}",
   },
 
   "power-profiles-daemon": {
@@ -134,64 +143,76 @@
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
-      "default": "",
+      "default": "",
       "performance": "",
       "balanced": "",
       "power-saver": "",
     },
   },
 
+  "bluetooth": {
+    "format": "󰂲",
+    "format-on": "",
+    "format-connected": "󰂱",
+    "format-connected-battery": "󰂱 {device_battery_percentage}%",
+
+    "tooltip-format": "Controller : {controller_alias}\t{controller_address}\t{controller_address_type} \nCurrent connections : {num_connections} \nStatus : {status}",
+    "tooltip-format-connected": "Controller : {controller_alias}\t{controller_address}\t{controller_address_type} \nCurrent connections : {num_connections} \nStatus : {status} \n{device_enumerate}",
+
+    "tooltip-format-enumerate-connected": "Device : {device_alias}\t{device_address}\t{device_address_type}",
+    "tooltip-format-enumerate-connected-battery": "Device : {device_alias}\t{device_address}\t{device_address_type}\t{device_battery_percentage}%",
+
+    "on-click": "blueman-manager",
+  },
+
   "network": {
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip-format": "{ifname} via {gwaddr} ",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "format": "{ifname}",
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+
+    "format-wifi": "{icon}",
+    "format-alt-wifi": "hhh",
+    "tooltip-format-wifi": "Interface : {ifname} \nSSID : {essid} \nSignal strength: {signaldBm}dBm {signalStrength}% \nFrequency : {frequency}GHz \nIP Address : {ipaddr}/{cidr} \nGateway : {gwaddr} \nSubnetmask : V4-{netmask}/{cidr} -- V6-{netmask6}/{cidr6} \n",
+
+    "format-ethernet": "󰈀  {bandwidthUpBits}  {bandwidthDownBits}",
+    "tooltip-format-ethernet": "Interface : {ifname} \nIP Address : {ipaddr}/{cidr} \nGateway : {gwaddr} \nSubnetmask : V4-{netmask}/{cidr} -- V6-{netmask6}/{cidr6}",
+
+    "format-linked": "   {bandwidthUpBits}  {bandwidthDownBits}",
+    "tooltip-format-linked": "Interface : {ifname} \nIP Address : {ipaddr}/{cidr} \nGateway : {gwaddr} \nSubnetmask : V4-{netmask}/{cidr} -- V6-{netmask6}/{cidr6}",
+
+    "format-disabled": "󰲛",
+    "tooltip-format-disabled": "Disabled",
+
+    "format-disconnected": "󰯡",
+    "tooltip-format-disconnected": "Disconnected",
+
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+
+    "family": "ipv4_6",
+    "interval": 1,
+    "format-alt": " {bandwidthUpBits}  {bandwidthDownBits}",
+    "on-click-right": "ghostty -e nmtui",
   },
 
   "pulseaudio": {
-    "format": "{volume}% {icon} {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
+    "format": "{icon} {volume}% {format_source}",
+    "format-muted": "  {format_source}",
+
+    "format-bluetooth": "{icon} {volume}% {format_source}",
+
+    "format-source": " {volume}%",
     "format-source-muted": "",
+
     "format-icons": {
       "headphone": "",
-      "hands-free": "",
-      "headset": "",
       "phone": "",
+      "phone-muted": "",
       "portable": "",
       "car": "",
       "default": ["", "", ""],
     },
+
+    "max-volume": "153",
+    "scroll-step": 1,
     "on-click": "pavucontrol",
-  },
-
-  "custom/media": {
-    "format": "{icon} {text}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": "🎜",
-    },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-  },
-
-  "custom/power": {
-    "format": "⏻ ",
-    "tooltip": false,
-    "menu": "on-click",
-    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-    "menu-actions": {
-      "shutdown": "shutdown",
-      "reboot": "reboot",
-      "suspend": "systemctl suspend",
-      "hibernate": "systemctl hibernate",
-    },
   },
 }
