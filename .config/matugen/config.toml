@@ -10,3 +10,12 @@ post_hook = 'restart-uwsm-app waybar'
 [templates.ghostty]
 input_path = '~/.dotfiles/.config/matugen/configuration/matugen-ghostty'
 output_path = '~/.dotfiles/.config/wal/templates/colors-ghostty'
+
+# GTK theme color update
+[templates.gtk3]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-gtk.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-gtk.css'
+output_path = '~/.config/gtk-4.0/gtk.css'

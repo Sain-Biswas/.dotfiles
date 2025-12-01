@@ -17,9 +17,9 @@ palette = 13={color13}
 palette = 14={color14}
 palette = 15={color15}
 
-background = #1a1110
-foreground = #f1dfdc
-cursor-color = #73342b
-cursor-text = #ffdad4
-selection-background = #564419
-selection-foreground = #fbdfa6
+background = #15130b
+foreground = #e8e2d4
+cursor-color = #534600
+cursor-text = #f8e287
+selection-background = #2c4e38
+selection-foreground = #c5ecce
