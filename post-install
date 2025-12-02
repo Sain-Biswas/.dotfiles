@@ -65,3 +65,12 @@ read -rp "Enter your Git email: " git_email
 
 git config --global user.name "$git_username"
 git config --global user.email "$git_email"
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Configure Git:
+#   safe.directory "*" -> allows Git to trust all directories (fixes permission warnings)
+#   credential.helper store -> persist credentials locally to avoid repeated logins
+# -----------------------------------------------------------------------------------------------------------------
+git config --global --add safe.directory "*"
+git config --global credential.helper store

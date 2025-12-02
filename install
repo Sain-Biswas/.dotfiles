@@ -59,15 +59,6 @@ paru -Syyu
 paru -S --needed - < ~/.dotfiles/packages.list
 
 
-# -----------------------------------------------------------------------------------------------------------------
-# Configure Git:
-#   safe.directory "*" -> allows Git to trust all directories (fixes permission warnings)
-#   credential.helper store -> persist credentials locally to avoid repeated logins
-# -----------------------------------------------------------------------------------------------------------------
-git config --global --add safe.directory "*"
-git config --global credential.helper store
-
-
 # --------------------------------------------------------------------
 # Install NVM (Node Version Manager)
 #   - Downloads and runs the official nvm installer script

@@ -254,3 +254,9 @@ window#waybar {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
+
+#custom-swaync:hover {
+    border: 2px solid @surface;
+    background-color: @secondary_fixed;
+    color: @on_secondary_fixed;
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+
+  "cssPriority": "user",
+  "ignore-gtk-theme": true,
+
+  "positionX": "right",
+  "positionY": "top",
+
+  "layer": "overlay",
+  "layer-shell": true,
+  "layer-shell-cover-screen": true,
+
+  "widgets": ["mpris", "inhibitors", "dnd", "title", "notifications"],
+
+  "control-center-layer": "top",
+
+  "notification-2fa-action": true,
+  "notification-inline-replies": false,
+  "notification-body-image-height": 160,
+  "notification-body-image-width": 200,
+  "notification-window-width": 500,
+  "notification-grouping": true,
+
+  "timeout": 4,
+  "timeout-low": 2,
+  "timeout-critical": 6,
+
+  "fit-to-screen": true,
+  "relative-timestamps": true,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when-available",
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "text-empty": "All clear, no notifications",
+
+  "script-fail-notify": true,
+
+  "widget-config": {
+    "mpris": {
+      "autohide": true,
+      "show-album-art": "when-available",
+      "loop-carousel": true,
+      "blacklist": ["org.mpris.MediaPlayer2.playerctld"]
+    },
+
+    "notifications": {
+      "vexpand": true
+    },
+
+    "inhibitors": {
+      "text": "Inhibitors",
+      "button-text": "Clear All",
+      "clear-all-button": true
+    },
+
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "󰎟"
+    },
+
+    "dnd": {
+      "text": "Do Not Disturb"
+    }
+  }
+}

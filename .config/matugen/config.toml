@@ -19,3 +19,9 @@ output_path = '~/.config/gtk-3.0/gtk.css'
 [templates.gtk4]
 input_path = '~/.dotfiles/.config/matugen/configuration/matugen-gtk.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
+
+# Swaync color configuration
+[templates.swaync]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-stylesheet.css'
+output_path = '~/.dotfiles/.config/swaync/colors.css'
+post_hook = 'swaync-client -rs'
