@@ -25,3 +25,8 @@ output_path = '~/.config/gtk-4.0/gtk.css'
 input_path = '~/.dotfiles/.config/matugen/configuration/matugen-stylesheet.css'
 output_path = '~/.dotfiles/.config/swaync/colors.css'
 post_hook = 'swaync-client -rs'
+
+# btop
+[templates.btop]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-btop.theme'
+output_path = '~/.dotfiles/.config/btop/themes/matugen.theme'
