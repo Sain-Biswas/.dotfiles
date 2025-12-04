@@ -1,0 +1,101 @@
+#! /usr/bin/env bash
+
+# -----------------------------------------------------------------------------------------------------------------
+# Unified Rofi Launcher Script
+#
+# This script provides a single entry point for launching various Rofi modes
+# using clean, descriptive flags:
+#
+#   --app-launcher  : Application launcher (drun mode)
+#   --emoji         : Emoji picker mode
+#   --window        : Window switcher / window selector
+#
+# All commands are wrapped in `uwsm-app --` to ensure correct Wayland
+# application activation under UWSM.
+#
+# Safety:
+#   set -e  : Stop execution immediately if any command fails.
+#
+# Usage:
+#   launch-rofi --app-launcher
+#   launch-rofi --emoji
+#   launch-rofi --window
+#
+# Exactly one mode flag should be provided.
+# -----------------------------------------------------------------------------------------------------------------
+set -e
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Display a help message showing available flags and their purposes.
+# This function is invoked if:
+#   - No argument is provided
+#   - Too many arguments are provided
+#   - An unknown flag is used
+# -----------------------------------------------------------------------------------------------------------------
+show_help() {
+    echo "Usage: $0 [--app-launcher | --emoji | --window]"
+    echo
+    echo "Options:"
+    echo "  --app-launcher   Launch Rofi in application launcher (drun) mode"
+    echo "  --emoji          Launch the emoji picker"
+    echo "  --window         Launch the window switcher"
+    echo "  --help           Show this help message"
+}
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Validate that *exactly one* argument is passed.
+# The script intentionally requires a single mode so users do not run
+# multiple Rofi windows at once or introduce ambiguous behavior.
+# -----------------------------------------------------------------------------------------------------------------
+if [[ $# -ne 1 ]]; then
+    echo "Error: You must specify exactly one mode."
+    show_help
+    exit 1
+fi
+
+
+# -----------------------------------------------------------------------------------------------------------------
+# Main command dispatcher
+#
+# Based on the argument provided, the script launches the appropriate Rofi
+# interface with the correct flags:
+#
+#   -show-icons : enables icons in all modes for a better UI
+#   -show       : selects which Rofi mode to display immediately
+#   -modi       : used in the emoji launcher to register the emoji mode
+#
+# The app launcher also defines:
+#   -run-command "uwsm-app -- {cmd}"
+#       Ensures launched apps inherit the correct environment under UWSM.
+# -----------------------------------------------------------------------------------------------------------------
+case "$1" in
+
+    --app-launcher)
+        # Application launcher (drun mode)
+        uwsm-app -- rofi -show-icons -show drun -run-command "uwsm-app -- {cmd}"
+        ;;
+
+    --emoji)
+        # Emoji picker mode
+        uwsm-app -- rofi -show-icons -show emoji -modi emoji
+        ;;
+
+    --window)
+        # Window switcher selector
+        uwsm-app -- rofi -show-icons -show window
+        ;;
+
+    --help)
+        show_help
+        exit 0
+        ;;
+
+    *)
+        # Unknown flag handler
+        echo "Error: Unknown option '$1'"
+        show_help
+        exit 1
+        ;;
+esac
