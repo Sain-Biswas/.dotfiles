@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+SELECTED=$(cliphist list | rofi -dmenu -theme ~/.dotfiles/.config/rofi/launcher.rasi)
+
+# If nothing selected, exit
+[[ -z "$SELECTED" ]] && exit 0
+
+# Decode → copy
+cliphist decode "$SELECTED" | wl-copy
