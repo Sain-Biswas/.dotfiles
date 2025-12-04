@@ -1,0 +1,26 @@
+* {
+    surface : {{ colors.surface.default.rgba }};
+    surface-container : {{ colors.surface_container.default.rgba }};
+    on-surface : {{ colors.on_surface.default.rgba }};
+
+    primary : {{ colors.primary.default.rgba }};
+    on-primary : {{ colors.on_primary.default.rgba }};
+
+    secondary : {{ colors.secondary.default.rgba }};
+    on-secondary : {{ colors.on_secondary.default.rgba }};
+
+    tertiary : {{ colors.tertiary.default.rgba }};
+    on-tertiary : {{ colors.on_tertiary.default.rgba }};
+
+    error : {{ colors.error.default.rgba }};
+    on-error : {{ colors.on_error.default.rgba }};
+
+    outline : {{ colors.outline.default.rgba }};
+
+
+    surface-fade : {{ colors.surface.default.rgba | set_alpha: 0.5 }};
+    primary-fade : {{ colors.primary.default.rgba | set_alpha: 0.5 }};
+    secondary-fade : {{ colors.secondary.default.rgba | set_alpha: 0.5 }};
+    tertiary-fade : {{ colors.tertiary.default.rgba | set_alpha: 0.5 }};
+    error-fade : {{ colors.error.default.rgba | set_alpha: 0.5 }};
+}

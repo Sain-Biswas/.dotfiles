@@ -74,17 +74,17 @@ case "$1" in
 
     --app-launcher)
         # Application launcher (drun mode)
-        uwsm-app -- rofi -show-icons -show drun -run-command "uwsm-app -- {cmd}"
+        uwsm-app -- rofi -show-icons -show drun -run-command "uwsm-app -- {cmd}" -theme ~/.dotfiles/.config/rofi/launcher.rasi
         ;;
 
     --emoji)
         # Emoji picker mode
-        uwsm-app -- rofi -show-icons -show emoji -modi emoji
+        uwsm-app -- rofi -show-icons -emoji-format {emoji} -show emoji -modi emoji -theme ~/.dotfiles/.config/rofi/emoji-selector.rasi
         ;;
 
     --window)
         # Window switcher selector
-        uwsm-app -- rofi -show-icons -show window
+        uwsm-app -- rofi -show-icons -show window -theme ~/.dotfiles/.config/rofi/launcher.rasi
         ;;
 
     --help)

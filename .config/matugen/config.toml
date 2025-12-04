@@ -30,3 +30,8 @@ post_hook = 'swaync-client -rs'
 [templates.btop]
 input_path = '~/.dotfiles/.config/matugen/configuration/matugen-btop.theme'
 output_path = '~/.dotfiles/.config/btop/themes/matugen.theme'
+
+# Rofi
+[templates.rofi]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-rofi.rasi'
+output_path = '~/.dotfiles/.config/rofi/colors.rasi'
