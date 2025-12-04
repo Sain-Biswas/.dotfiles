@@ -92,7 +92,7 @@ colorpicker_name(){
 }
 
 colorpicker_command(){
-    echo -e "HEX\nHSL\nRGB\nHSV\nLCH\nOKLCH\nLAB\nOKLAB\nLUMINANCE\nNAME" | rofi -dmenu -theme /home/sainbiswas/.dotfiles/.config/rofi/launcher.rasi -theme-str 'mainbox { children: ["listview"]; }' -theme-str 'listview { scrollbar: false; }' || exit 0
+    echo -e "HEX\nHSL\nRGB\nHSV\nLCH\nOKLCH\nLAB\nOKLAB\nLUMINANCE\nNAME" | rofi -dmenu -theme /home/sainbiswas/.dotfiles/.config/rofi/launcher.rasi -theme-str 'mainbox { children: ["listview"]; } window { width: 20%; } listview { scrollbar: false; lines: 5; columns: 2; }  element-text { horizontal-align: 0.5; }' || exit 0
 }
 
 chosen="$(colorpicker_command)"
