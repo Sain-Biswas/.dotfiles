@@ -2,7 +2,7 @@
   "height": 30,
   "spacing": 0,
 
-  "modules-left": ["clock", "wlr/taskbar", "mpris"],
+  "modules-left": ["clock", "mpris"],
 
   "modules-center": ["hyprland/workspaces"],
 
@@ -40,20 +40,20 @@
     "escape": true,
   },
 
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 16,
-    "tooltip-format": "Title -> {title}\nName -> {name}\nApp ID -> {app_id}",
-    "on-click": "activate",
-    "on-click-middle": "close",
-    "app_ids-mapping": {
-      "firefoxdeveloperedition": "firefox-developer-edition",
-    },
-    "rewrite": {
-      "Firefox Web Browser": "Firefox",
-      "Foot Server": "Terminal",
-    },
-  },
+  // "wlr/taskbar": {
+  //   "format": "{icon}",
+  //   "icon-size": 16,
+  //   "tooltip-format": "Title -> {title}\nName -> {name}\nApp ID -> {app_id}",
+  //   "on-click": "activate",
+  //   "on-click-middle": "close",
+  //   "app_ids-mapping": {
+  //     "firefoxdeveloperedition": "firefox-developer-edition",
+  //   },
+  //   "rewrite": {
+  //     "Firefox Web Browser": "Firefox",
+  //     "Foot Server": "Terminal",
+  //   },
+  // },
 
   "mpris": {
     "format": "{player_icon} {title}",
@@ -72,7 +72,7 @@
       "playing": "",
       "Stopped": "",
     },
-    "title-len": 30,
+    "title-len": 40,
   },
 
   "hyprland/workspaces": {
