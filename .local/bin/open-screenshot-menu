@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+SCREENSHOT_MODE=$(echo -e "SMART\nWINDOWS\nFULLSCREEN\nREGION" | rofi -dmenu -theme /home/sainbiswas/.dotfiles/.config/rofi/launcher.rasi -theme-str 'mainbox { children: ["listview"]; } window { width: 20%; } listview { scrollbar: false; lines: 2; columns: 2; }  element-text { horizontal-align: 0.5; }')
+
+[ -z "$SCREENSHOT_MODE" ] && exit 0
+
+case ${SCREENSHOT_MODE} in
+    "SMART")
+        ~/.dotfiles/.local/bin/utility-screenshot smart
+        ;;
+    "WINDOWS")
+        ~/.dotfiles/.local/bin/utility-screenshot windows
+        ;;
+    "FULLSCREEN")
+        ~/.dotfiles/.local/bin/utility-screenshot fullscreen
+        ;;
+    "REGION")
+        ~/.dotfiles/.local/bin/utility-screenshot region
+        ;;
+    *)
+        exit 1
+        ;;
+esac
