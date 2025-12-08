@@ -1,0 +1,46 @@
+@import "~/.dotfiles/.config/rofi/colors.rasi"
+
+window {
+    background-color: @surface-fade;
+    padding: 8px 0px;
+    width: 100%;
+}
+
+mainbox {
+    background-color: @surface-fade;
+    text-color: @on-surface;
+    orientation: vertical;
+    padding: 0px;
+    children: ["listview"];
+}
+
+listview {
+    spacing: 4px;
+    lines: 1;
+    columns: 6;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+    background-color: transparent;
+    text-color: @on-surface;
+    orientation: vertical;
+    children: ["element-icon", "element-text"];
+}
+
+element selected.normal {
+    background-color: @primary;
+    text-color: @on-primary;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+element-icon {
+    background-color: transparent;
+}

@@ -2,25 +2,78 @@
 
 set -e
 
-if [[ -z $1 ]]; then
-    echo "Error: No Image file path provided."
-    echo "Usage: update-wallpaper-theme <image-path-to-use>"
-    exit 1
+WALLPAPER_DIRECTORY="$HOME/.dotfiles/wallpapers"
+
+CACHE_DIRECTORY="$HOME/.cache/rofi-wallpapers/"
+
+CURRENT_WORKING_DIRECTORY="$(pwd)"
+
+if [ ! -d "$CACHE_DIRECTORY" ]; then
+    mkdir -p "$CACHE_DIRECTORY" || exit 1
 fi
 
-IMAGE_PATH="$1"
+cd "$WALLPAPER_DIRECTORY" || exit 1
+
+IFS=$"\n"
+
+PHYSICAL_MONITOR_SIZE=16
+MONITOR_RES=$(hyprctl monitors |grep -A2 Monitor |head -n 2 |awk '{print $1}' | grep -oE '^[0-9]+')
+MONITOR_RES=$((($MONITOR_RES / 6)))
+
+for IMAGEN in "$WALLPAPER_DIRECTORY"/*.{jpg,jpeg,png,webp}; do
+    if [ -f "$IMAGEN" ]; then
+        NOMBRE_ARCHIVO=$(basename "$IMAGEN")
+			if [ ! -f "${CACHE_DIRECTORY}/${NOMBRE_ARCHIVO}" ] ; then
+			convert -strip "$IMAGEN" -thumbnail 1024x1024^ -gravity center -extent 1024x1024 "${CACHE_DIRECTORY}/${NOMBRE_ARCHIVO}"
+			fi
+    fi
+done
+
+IMAGE="$(find "${WALLPAPER_DIRECTORY}"  -maxdepth 1  -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) -exec basename {} \; | sort | while read -r A ; do  echo -en "$A\x00icon\x1f""${CACHE_DIRECTORY}"/"$A\n" ; done | rofi -dmenu -theme ~/.dotfiles/.config/rofi/wallselect.rasi -theme-str "element-icon{size:${MONITOR_RES}px;}")"
+IMAGE_PATH="$WALLPAPER_DIRECTORY/$IMAGE"
 
 if [ ! -f "$IMAGE_PATH" ]; then
     echo "Error: File not found - $IMAGE_PATH"
     exit 1
 fi
 
+COLOR_SCHEME="$(echo -e "WALLPAPER\nMATRIX\nVERCEL\nMATTE_BLACK\nROSE_PINE\nTINACIOUS_DESIGN_DARK\nTOKYONIGHT\nTOMORROW_NIGHT_BURNS\nUNDER_THE_SEAS" | rofi -dmenu -theme /home/sainbiswas/.dotfiles/.config/rofi/launcher.rasi -theme-str 'mainbox { children: ["listview"]; } window { width: 30%; } listview { scrollbar: false; lines: 5; columns: 2; }  element-text { horizontal-align: 0.5; }' || exit 1)"
+
 echo "preload = $IMAGE_PATH" > ~/.dotfiles/.config/hypr/hyprpaper.conf
 echo "wallpaper = , $IMAGE_PATH" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
 
 matugen image "$IMAGE_PATH"
 
-wal --cols16 -i "$IMAGE_PATH"
+case ${COLOR_SCHEME} in
+    "MATRIX")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/matrix.json
+        ;;
+    "MATTE_BLACK")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/matte-black.json
+        ;;
+    "ROSE_PINE")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/rose-pine.json
+        ;;
+    "TINACIOUS_DESIGN_DARK")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/tinacious-design-dark.json
+        ;;
+    "TOKYONIGHT")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/tokyonight.json
+        ;;
+    "TOMORROW_NIGHT_BURNS")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/tomorrow-night-burns.json
+        ;;
+    "UNDER_THE_SEAS")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/under-the-sea.json
+        ;;
+    "VERCEL")
+        wal --cols16 -i "$IMAGE_PATH" --theme ~/.dotfiles/.config/wal/colorschemes/vercel.json
+        ;;
+    *)
+        wal --cols16 -i "$IMAGE_PATH"
+        ;;
+esac
+
 
 cat ~/.cache/wal/colors-ghostty > ~/.dotfiles/.config/ghostty/themes/matwal
 
