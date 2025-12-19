@@ -1,26 +1,26 @@
 * {
-    surface : rgba(26, 17, 15, 1);
-    surface-container : rgba(39, 29, 27, 1);
-    on-surface : rgba(241, 223, 218, 1);
+    surface : rgba(18, 19, 24, 1);
+    surface-container : rgba(30, 31, 37, 1);
+    on-surface : rgba(227, 226, 233, 1);
 
-    primary : rgba(255, 180, 162, 1);
-    on-primary : rgba(86, 31, 17, 1);
+    primary : rgba(179, 197, 255, 1);
+    on-primary : rgba(25, 46, 96, 1);
 
-    secondary : rgba(231, 189, 179, 1);
-    on-secondary : rgba(68, 42, 35, 1);
+    secondary : rgba(193, 198, 221, 1);
+    on-secondary : rgba(42, 48, 66, 1);
 
-    tertiary : rgba(218, 197, 141, 1);
-    on-tertiary : rgba(60, 47, 4, 1);
+    tertiary : rgba(225, 187, 220, 1);
+    on-tertiary : rgba(66, 39, 65, 1);
 
     error : rgba(255, 180, 171, 1);
     on-error : rgba(105, 0, 5, 1);
 
-    outline : rgba(160, 140, 136, 1);
+    outline : rgba(143, 144, 154, 1);
 
 
-    surface-fade : rgba(26, 17, 15, 0.5);
-    primary-fade : rgba(255, 180, 162, 0.5);
-    secondary-fade : rgba(231, 189, 179, 0.5);
-    tertiary-fade : rgba(218, 197, 141, 0.5);
+    surface-fade : rgba(18, 19, 24, 0.5);
+    primary-fade : rgba(179, 197, 255, 0.5);
+    secondary-fade : rgba(193, 198, 221, 0.5);
+    tertiary-fade : rgba(225, 187, 220, 0.5);
     error-fade : rgba(255, 180, 171, 0.5);
 }
