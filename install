@@ -55,6 +55,8 @@ paru -Syyu
 # -----------------------------------------------------------------------------------------------------------------
 # Install all packages listed in dotfiles' package list.
 # The list should contain package names (one per line).
+#
+# To update run - pacman -Qqe > ~/.dotfiles/packages.list
 # -----------------------------------------------------------------------------------------------------------------
 paru -S --needed - < ~/.dotfiles/packages.list
 
