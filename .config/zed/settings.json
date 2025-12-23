@@ -11,18 +11,18 @@
     "file_icons": true,
     "git_status": true,
     "show_diagnostics": "all",
-    "show_close_button": "hover"
+    "show_close_button": "hover",
   },
 
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_icon": true,
   },
 
   "git": {
     "inline_blame": {
       "show_commit_summary": true,
-      "padding": 8
-    }
+      "padding": 8,
+    },
   },
 
   "disable_ai": true,
@@ -40,6 +40,6 @@
   "autosave": "on_focus_change",
 
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font"
-  }
+    "font_family": "JetBrainsMono Nerd Font",
+  },
 }

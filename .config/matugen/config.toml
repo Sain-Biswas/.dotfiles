@@ -35,3 +35,8 @@ output_path = '~/.dotfiles/.config/btop/themes/matugen.theme'
 [templates.rofi]
 input_path = '~/.dotfiles/.config/matugen/configuration/matugen-rofi.rasi'
 output_path = '~/.dotfiles/.config/rofi/colors.rasi'
+
+# Hyprland Color Configuration
+[templates.hyprland]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-hypr.conf'
+output_path = '~/.dotfiles/.config/hypr/colors.conf'
