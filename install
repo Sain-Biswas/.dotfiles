@@ -101,10 +101,12 @@ paru -Sccc
 # Enable systemd user services for Hyprland components:
 #   - hyprpaper : wallpaper daemon for Hyprland
 #   - waybar    : bar/status display for Wayland
+#   - hypridle  : idle daemon for Hyprland
 # These services will start automatically in the user session.
 # -----------------------------------------------------------------------------------------------------------------
 systemctl --user enable hyprpaper.service
 systemctl --user enable waybar.service
+systemctl --user enable hypridle.service
 
 
 # -----------------------------------------------------------------------------------------------------------------
