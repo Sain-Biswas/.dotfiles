@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+API="https://pokeapi.co/api/v2"
+MAX_POKEMON=1025
+CACHE_DIR="$HOME/.cache/pokemon"
+IMG_FILE="$CACHE_DIR/pokemon.png"
+
+mkdir -p "$CACHE_DIR"
+
+# Pick random Pokémon ID
+ID=$((RANDOM % MAX_POKEMON + 1))
+
+# Fetch Pokémon data
+DATA=$(curl -fsSL "$API/pokemon/$ID")
+
+NAME=$(echo "$DATA" | jq -r '.name')
+IMG_URL=$(echo "$DATA" | jq -r '.sprites.other["official-artwork"].front_default')
+
+if [[ -z "$IMG_URL" || "$IMG_URL" == "null" ]]; then
+    echo "No image available for Pokémon #$ID"
+    exit 1
+fi
+
+# Download image (cached)
+curl -fsSL "$IMG_URL" -o "$IMG_FILE"
+
+# Header
+printf "Pokémon #%d — %s\n\n" "$ID" "${NAME^}"
+
+# Render image with chafa (optimized for Ghostty)
+chafa --size=40x20 --stretch --symbols=block --colors=full "$IMG_FILE"
