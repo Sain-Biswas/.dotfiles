@@ -39,8 +39,10 @@ fi
 
 COLOR_SCHEME="$(echo -e "WALLPAPER\nMATRIX\nVERCEL\nMATTE_BLACK\nROSE_PINE\nTINACIOUS_DESIGN_DARK\nTOKYONIGHT\nTOMORROW_NIGHT_BURNS\nUNDER_THE_SEAS" | rofi -dmenu -theme /home/sainbiswas/.dotfiles/.config/rofi/launcher.rasi -theme-str 'mainbox { children: ["listview"]; } window { width: 30%; } listview { scrollbar: false; lines: 5; columns: 2; }  element-text { horizontal-align: 0.5; }' || exit 1)"
 
-echo "preload = $IMAGE_PATH" > ~/.dotfiles/.config/hypr/hyprpaper.conf
-echo "wallpaper = , $IMAGE_PATH" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
+echo "wallpaper {" > ~/.dotfiles/.config/hypr/hyprpaper.conf
+echo "    monitor =" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
+echo "    path = $IMAGE_PATH" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
+echo "}" >> ~/.dotfiles/.config/hypr/hyprpaper.conf
 
 matugen image "$IMAGE_PATH"
 
