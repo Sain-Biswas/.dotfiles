@@ -1,0 +1,13 @@
+.git
+.gitignore
+
+LICENSE
+README.md
+
+install
+post-install
+packages.list
+
+docs
+wallpapers
+zsh
