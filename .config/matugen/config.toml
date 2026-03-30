@@ -1,0 +1,22 @@
+[config]
+
+[config.wallpaper]
+set = true
+command = "hyprctl hyprpaper wallpaper  , {{ image }}"
+
+
+# GTK 3 Applications
+[templates.gtk3]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-gtk3.css"
+output_path = "~/.dotfiles/.config/gtk-3.0/gtk.css"
+
+# GTK 4 Applications
+[templates.gtk4]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-gtk4.css"
+output_path = "~/.dotfiles/.config/gtk-4.0/gtk.css"
+
+# Ghostty Terminal
+[templates.ghostty]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-ghostty.ghostty"
+output_path = "~/.dotfiles/.config/ghostty/themes/Matugen"
+post_hook = 'pkill -SIGUSR2 ghostty'
