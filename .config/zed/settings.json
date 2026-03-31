@@ -16,6 +16,10 @@
     "show_close_button": "hover",
   },
 
+  "project_panel": {
+    "sticky_scroll": false,
+  },
+
   "title_bar": {
     "show_branch_icon": true,
   },
@@ -35,8 +39,8 @@
   "icon_theme": "Catppuccin Mocha",
   "theme": {
     "mode": "dark",
-    "light": "Catppuccin Iced Latte (Blur)",
-    "dark": "Catppuccin Espresso (Blur)",
+    "light": "Matugen Light Transparent",
+    "dark": "Matugen Dark Transparent",
   },
 
   "autosave": "on_focus_change",

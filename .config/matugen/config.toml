@@ -20,3 +20,9 @@ output_path = "~/.dotfiles/.config/gtk-4.0/gtk.css"
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-ghostty.ghostty"
 output_path = "~/.dotfiles/.config/ghostty/themes/Matugen"
 post_hook = 'pkill -SIGUSR2 ghostty'
+
+# Zed Editor
+[templates.zed]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-zed.json"
+output_path = "~/.dotfiles/.config/zed/themes/matugen.json"
+post_hook = 'pkill -SIGUSR2 zeditor'
