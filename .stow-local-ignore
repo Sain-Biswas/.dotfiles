@@ -8,7 +8,8 @@ install
 post-install
 packages.list
 
-docs
-wallpapers
 zsh
+docs
+scripts
 temporary
+wallpapers
