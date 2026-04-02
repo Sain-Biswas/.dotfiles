@@ -25,7 +25,6 @@ post_hook = 'pkill -SIGUSR2 ghostty'
 [templates.zed]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-zed.json"
 output_path = "~/.dotfiles/.config/zed/themes/matugen.json"
-post_hook = 'pkill -SIGUSR2 zeditor'
 
 # Btop
 [templates.btop]
