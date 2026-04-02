@@ -32,7 +32,12 @@ post_hook = 'pkill -SIGUSR2 zeditor'
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-btop.theme"
 output_path = "~/.dotfiles/.config/btop/themes/matugen.theme"
 
-# Btop
+# Telegram Desktop
 [templates.telegram]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-telegram.tdesktop-theme"
 output_path = "~/.dotfiles/.config/matugen/output/telegram.tdesktop-theme"
+
+# Visual studio code
+[templates.vscode-insiders]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-vscode.json"
+output_path = "~/.vscode-insiders/extensions/noctalia.noctaliatheme-0.0.5/themes/NoctaliaTheme-color-theme.json"
