@@ -2,7 +2,7 @@
 
 [config.wallpaper]
 set = true
-command = "hyprctl hyprpaper wallpaper  , {{ image }}"
+command = 'printf "splash = false\n\nwallpaper {\n    monitor =\n    path = {{ image }}\n    fit_mode = cover\n}\n" > "$HOME/.dotfiles/.config/hypr/hyprpaper.conf"  && hyprctl hyprpaper wallpaper  , {{ image }}'
 
 
 # GTK 3 Applications
