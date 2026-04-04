@@ -40,3 +40,9 @@ output_path = "~/.dotfiles/.config/matugen/output/telegram.tdesktop-theme"
 [templates.vscode-insiders]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-vscode.json"
 output_path = "~/.vscode-insiders/extensions/noctalia.noctaliatheme-0.0.5/themes/NoctaliaTheme-color-theme.json"
+
+# Waybar
+[templates.waybar]
+input_path = '~/.dotfiles/.config/matugen/configuration/matugen-colors.css'
+output_path = '~/.dotfiles/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
