@@ -1,0 +1,16 @@
+.git
+.gitignore
+
+LICENSE
+README.md
+
+temporary
+wallpapers
+scripts
+docs
+zsh
+
+install.sh
+post-install.sh
+packages.list
+
