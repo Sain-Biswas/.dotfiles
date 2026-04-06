@@ -1,0 +1,11 @@
+[config]
+
+[config.wallpaper]
+set = true
+command = "awww img {{image}} --transition-type outer"
+
+
+# Zed Editor
+[templates.zed]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-zed.json"
+output_path = "~/.dotfiles/.config/zed/themes/matugen.json"
