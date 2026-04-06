@@ -4,6 +4,11 @@
 set = true
 command = "awww img {{image}} --transition-type outer"
 
+# Alacritty
+[templates.alacritty]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-alacritty.toml"
+output_path = "~/.dotfiles/.config/alacritty/themes/matugen.toml"
+
 
 # Zed Editor
 [templates.zed]
