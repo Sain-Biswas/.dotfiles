@@ -14,3 +14,8 @@ output_path = "~/.dotfiles/.config/alacritty/themes/matugen.toml"
 [templates.zed]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-zed.json"
 output_path = "~/.dotfiles/.config/zed/themes/matugen.json"
+
+# Hyprland & Hyprlock
+[templates.hypr]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-hypr.conf"
+output_path = "~/.dotfiles/.config/hypr/colors.conf"
