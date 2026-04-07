@@ -36,22 +36,22 @@ background = '#bec2ff'
 
 
 [colors.normal]
-black = "#46464f"
+black = "#131318"
 red = "#ffb4ab"
 green = "#bec2ff"
 yellow = "#c5c4dd"
 blue = "#e7b9d5"
-magenta = "#bec2ff"
-cyan = "#c5c4dd"
-white = "#e4e1e9"
+magenta = "#93000a"
+cyan = "#e0e0ff"
+white = "#c7c5d0"
 
 
 [colors.bright]
-black = "#c7c5d0"
+black = "#39393f"
 red = "#ffb4ab"
 green = "#bec2ff"
 yellow = "#c5c4dd"
 blue = "#e7b9d5"
-magenta = "#bec2ff"
-cyan = "#c5c4dd"
+magenta = "#93000a"
+cyan = "#e0e0ff"
 white = "#e4e1e9"
