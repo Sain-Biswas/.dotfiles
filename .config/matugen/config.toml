@@ -19,3 +19,11 @@ output_path = "~/.dotfiles/.config/zed/themes/matugen.json"
 [templates.hypr]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-hypr.conf"
 output_path = "~/.dotfiles/.config/hypr/colors.conf"
+
+# Waybar color and modules
+[templates.waybar-clock]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-waybar-clock.jsonc"
+output_path = "~/.dotfiles/.config/waybar/modules/clock.jsonc"
+[templates.waybar]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
+output_path = "~/.dotfiles/.config/waybar/colors.css"
