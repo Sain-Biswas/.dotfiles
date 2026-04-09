@@ -10,20 +10,30 @@ input_path = "~/.dotfiles/.config/matugen/configuration/matugen-alacritty.toml"
 output_path = "~/.dotfiles/.config/alacritty/themes/matugen.toml"
 
 
+# Ghostty
+[templates.ghostty]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-ghostty"
+output_path = "~/.dotfiles/.config/ghostty/themes/Matugen"
+post_hook = "pkill -SIGUSR2 ghostty"
+
+
 # Zed Editor
 [templates.zed]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-zed.json"
 output_path = "~/.dotfiles/.config/zed/themes/matugen.json"
+
 
 # Hyprland & Hyprlock
 [templates.hypr]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-hypr.conf"
 output_path = "~/.dotfiles/.config/hypr/colors.conf"
 
+
 # Waybar color and modules
 [templates.waybar-clock]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-waybar-clock.jsonc"
 output_path = "~/.dotfiles/.config/waybar/modules/clock.jsonc"
+
 [templates.waybar]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
 output_path = "~/.dotfiles/.config/waybar/colors.css"
