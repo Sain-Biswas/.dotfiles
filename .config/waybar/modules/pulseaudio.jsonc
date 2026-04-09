@@ -1,0 +1,37 @@
+/**
+ *     ____  _  _  __    ____  ____   __   _  _  ____  __  __
+ *    (  _ \/ )( \(  )  / ___)(  __) / _\ / )( \(    \(  )/  \
+ *     ) __/) \/ (/ (_/\\___ \ ) _) /    \) \/ ( ) D ( )((  O )
+ *    (__)  \____/\____/(____/(____)\_/\_/\____/(____/(__)\__/
+ */
+
+{
+  "pulseaudio": {
+    /*
+     * #pulseaudio
+     * #pulseaudio.bluetooth
+     * #pulseaudio.muted
+     * #pulseaudio.source-muted
+     */
+
+    "format": "{icon} {volume}% {format_source}",
+    "format-muted": " {format_source}",
+
+    "format-bluetooth": "󰂯{icon} {volume}% {format_source}",
+    "format-bluetooth-muted": "󰂯 {format_source}",
+
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+
+    "on-click": "pavucontrol",
+
+    "format-icons": {
+      "default": ["", "", ""],
+      "headphone": "",
+      "phone": "",
+      "phone-muted": "",
+      "portable": "",
+      "car": "",
+    },
+  },
+}

@@ -1,0 +1,25 @@
+/**
+ *     _  _   __  ____  __ _  ____  ____   __    ___  ____  ____
+ *    / )( \ /  \(  _ \(  / )/ ___)(  _ \ / _\  / __)(  __)/ ___)
+ *    \ /\ /(  O ))   / )  ( \___ \ ) __//    \( (__  ) _) \___ \
+ *    (_/\_) \__/(__\_)(__\_)(____/(__)  \_/\_/ \___)(____)(____/
+ */
+
+{
+  "hyprland/workspaces": {
+    /*
+     * #workspaces
+     * #workspaces button
+     * #workspaces button.active
+     * #workspaces button.empty
+     * #workspaces button.persistent
+     * #workspaces button.special
+     * #workspaces button.visible
+     * #workspaces button.urgent
+     */
+
+    "persistent-workspaces": {
+      "*": 10,
+    },
+  },
+}

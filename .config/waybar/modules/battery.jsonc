@@ -1,0 +1,58 @@
+/**
+ *     ____   __  ____  ____  ____  ____  _  _
+ *    (  _ \ / _\(_  _)(_  _)(  __)(  _ \( \/ )
+ *     ) _ (/    \ )(    )(   ) _)  )   / )  /
+ *    (____/\_/\_/(__)  (__) (____)(__\_)(__/
+ */
+
+{
+  "battery": {
+    /*
+     * #battery
+     * #battery.full
+     * #battery.charging
+     * #battery.plugged
+     * #battery.warning
+     * #battery.critical
+     */
+
+    "bat": "BAT0",
+    "interval": 60,
+
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+
+    "format": "{icon} {capacity}%",
+    "format-full": "󱟢 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-charging": "{icon} {capacity}%",
+
+    "tooltip-format": "Capacity     : {capacity}\nHealth       : {health}%\nCycles       : {cycles}",
+
+    "format-icons": {
+      "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+    },
+  },
+
+  "upower": {
+    /*
+     * #upower
+     * #upower.charging
+     * #upower.discharging
+     * #upower.full
+     * #upower.empty
+     * #upower.unknown-status
+     */
+
+    "icon-size": 25,
+    "hide-if-empty": true,
+
+    "format": "{percentage}",
+
+    "tooltip": true,
+    "tooltip-spacing": 20,
+  },
+}

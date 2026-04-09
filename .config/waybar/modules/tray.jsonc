@@ -1,0 +1,26 @@
+/**
+ *     ____  ____   __   _  _
+ *    (_  _)(  _ \ / _\ ( \/ )
+ *      )(   )   //    \ )  /
+ *     (__) (__\_)\_/\_/(__/
+ */
+
+{
+  "tray": {
+    /*
+     * #tray
+     * #tray menu for the context menu
+     * #tray widget>image for icons
+     * #tray > .passive for icons with status Passive
+     * #tray > .active for icons with status Active
+     * #tray > .needs-attention for icons with status NeedsAttention
+     */
+
+    "icon-size": 16,
+    "spacing": 5,
+
+    "show-passive-items": true,
+
+    "icons": {},
+  },
+}

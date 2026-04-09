@@ -18,6 +18,7 @@
 
   "project_panel": {
     "sticky_scroll": false,
+    "dock": "right",
   },
 
   "title_bar": {

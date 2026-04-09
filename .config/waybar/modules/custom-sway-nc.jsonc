@@ -1,0 +1,55 @@
+/**
+ *     ____  _  _   __   _  _    __ _   ___
+ *    / ___)/ )( \ / _\ ( \/ )  (  ( \ / __)
+ *    \___ \\ /\ //    \ )  /   /    /( (__
+ *    (____/(_/\_)\_/\_/(__/    \_)__) \___)
+ */
+
+{
+  "custom/swaync": {
+    /*
+     * #custom-swaync
+
+     * #custom-swaync.none
+     * #custom-swaync.notification
+
+     * #custom-swaync.dnd-none
+     * #custom-swaync.dnd-notification
+
+     * #custom-swaync.inhibited-none
+     * #custom-swaync.inhibited-notification
+
+     * #custom-swaync.dnd-inhibited-none
+     * #custom-swaync.dnd-inhibited-notification
+     */
+
+    "tooltip": true,
+    "tooltip-format": "Left Click -> Launch Notification Center\nRight Click -> Do not Disturb",
+
+    "format": "{icon} {text}",
+
+    "format-icons": {
+      "none": "",
+      "notification": "",
+
+      "dnd-none": "",
+      "dnd-notification": "",
+
+      "inhibited-none": "",
+      "inhibited-notification": "󱏨",
+
+      "dnd-inhibited-none": "",
+      "dnd-inhibited-notification": "󱏪",
+    },
+
+    "return-type": "json",
+
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+
+    "escape": true,
+  },
+}

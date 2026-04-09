@@ -1,0 +1,33 @@
+{
+  "height": 30,
+  "spacing": 4,
+
+  "include": [
+    "~/.dotfiles/.config/waybar/modules/backlight.jsonc",
+    "~/.dotfiles/.config/waybar/modules/battery.jsonc",
+    "~/.dotfiles/.config/waybar/modules/clock.jsonc",
+    "~/.dotfiles/.config/waybar/modules/custom-sway-nc.jsonc",
+    "~/.dotfiles/.config/waybar/modules/idle_inhibitor.jsonc",
+    "~/.dotfiles/.config/waybar/modules/mpris.jsonc",
+    "~/.dotfiles/.config/waybar/modules/network.jsonc",
+    "~/.dotfiles/.config/waybar/modules/power-profiles-daemon.jsonc",
+    "~/.dotfiles/.config/waybar/modules/pulseaudio.jsonc",
+    "~/.dotfiles/.config/waybar/modules/tray.jsonc",
+    "~/.dotfiles/.config/waybar/modules/workspaces.jsonc",
+  ],
+
+  "modules-left": ["hyprland/workspaces", "mpris"],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "power-profiles-daemon",
+    "idle_inhibitor",
+    "backlight",
+    "tray",
+    "custom/swaync",
+    "battery",
+  ],
+}

@@ -20,11 +20,11 @@
       "weeks-pos": "left",
 
       "format": {
-        "months": "<span color='{{ colors.primary.default.hex }}'><b>{}</b></span>",
-        "days": "<span color='{{ colors.on_surface.default.hex }}'><b>{}</b></span>",
-        "weeks": "<span color='{{ colors.secondary.default.hex }}'><b>W{}</b></span>",
-        "weekdays": "<span color='{{ colors.tertiary.default.hex }}'><b>{}</b></span>",
-        "today": "<span color='{{ colors.error.default.hex }}'><b><u>{}</u></b></span>",
+        "months": "<span color='#9ed592'><b>{}</b></span>",
+        "days": "<span color='#e3e1ec'><b>{}</b></span>",
+        "weeks": "<span color='#edb8cc'><b>W{}</b></span>",
+        "weekdays": "<span color='#bcc3fa'><b>{}</b></span>",
+        "today": "<span color='#ffb4ab'><b><u>{}</u></b></span>",
       },
     },
 
