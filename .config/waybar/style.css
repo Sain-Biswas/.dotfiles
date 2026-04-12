@@ -1,7 +1,38 @@
+@import "styles/colors.css";
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family:
         "JetBrainsMono Nerd Font Propo", FontAwesome, Roboto, Helvetica, Arial,
         sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+
+    /* Global CSS reset */
+    padding: 0px;
+    margin: 0px;
 }
+
+#waybar {
+    background-color: transparent;
+}
+
+button,
+button:hover {
+    box-shadow: none;
+    animation: none;
+}
+
+tooltip {
+    background-color: @background;
+    border: 3px @outline solid;
+}
+
+tooltip label {
+    color: @on_backgroun;
+}
+
+@import "styles/clock.css";
+@import "styles/battery.css";
+@import "styles/workspaces.css";
+@import "styles/mpris.css";
+@import "styles/custom-sway-nc.css";

@@ -1,6 +1,7 @@
 {
   "height": 30,
-  "spacing": 4,
+  "spacing": 0,
+  "margin": 0,
 
   "include": [
     "~/.dotfiles/.config/waybar/modules/backlight.jsonc",
@@ -21,10 +22,10 @@
   "modules-center": ["clock"],
 
   "modules-right": [
-    "network",
     "pulseaudio",
-    "power-profiles-daemon",
     "idle_inhibitor",
+    "power-profiles-daemon",
+    "network",
     "backlight",
     "tray",
     "custom/swaync",

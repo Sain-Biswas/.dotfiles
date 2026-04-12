@@ -1,0 +1,23 @@
+/*
+* MPRIS Module CSS
+*/
+
+#mpris {
+    border: 3px @outline solid;
+    padding: 0px 8px;
+    border-radius: 999999px;
+    margin-left: 4px;
+    background: @background;
+    color: @on_background;
+}
+
+#mpris.playing {
+    background: @primary;
+    color: @on_primary;
+}
+
+#mpris.paused,
+#mpris.stopped {
+    background: @error;
+    color: @on_error;
+}
