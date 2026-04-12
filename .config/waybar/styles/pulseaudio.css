@@ -1,0 +1,42 @@
+/*
+* Pulseaudio Module CSS
+*/
+
+#pulseaudio {
+    border-top-left-radius: 999999px;
+    border-bottom-left-radius: 999999px;
+    padding: 0px 8px;
+    border-top: 3px @outline solid;
+    border-bottom: 3px @outline solid;
+    border-left: 3px @outline solid;
+    background: @background;
+    color: @on_background;
+}
+
+#pulseaudio.bluetooth {
+    background: @primary;
+    color: @on_primary;
+}
+
+#pulseaudio.source-muted {
+    background: @error;
+    color: @on_error;
+}
+
+#pulseaudio.muted:not(.source-muted) {
+    color: @background;
+    background: linear-gradient(to right, @error 0%, @tertiary 60%);
+}
+#pulseaudio.muted.bluetooth:not(.source-muted) {
+    color: @background;
+    background: linear-gradient(to right, @error 0%, @primary 60%);
+}
+
+#pulseaudio.source-muted:not(.muted) {
+    color: @background;
+    background: linear-gradient(to left, @error 0%, @tertiary 60%);
+}
+#pulseaudio.source-muted.bluetooth:not(.muted) {
+    color: @background;
+    background: linear-gradient(to left, @error 0%, @primary 60%);
+}

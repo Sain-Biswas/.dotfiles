@@ -1,0 +1,24 @@
+/*
+* Power Profiles Daemon Module CSS
+*/
+
+#power-profiles-daemon {
+    border-top: 3px @outline solid;
+    border-bottom: 3px @outline solid;
+    padding: 0px 8px;
+}
+
+#power-profiles-daemon.performance {
+    background: @error;
+    color: @on_error;
+}
+
+#power-profiles-daemon.balanced {
+    background: @background;
+    color: @on_background;
+}
+
+#power-profiles-daemon.power-saver {
+    background: @primary;
+    color: @on_primary;
+}

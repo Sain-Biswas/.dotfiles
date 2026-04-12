@@ -1,7 +1,10 @@
+/*
+* Waybar Styling using GTK CSS
+*/
+
 @import "styles/colors.css";
 
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family:
         "JetBrainsMono Nerd Font Propo", FontAwesome, Roboto, Helvetica, Arial,
         sans-serif;
@@ -23,12 +26,13 @@ button:hover {
 }
 
 tooltip {
-    background-color: @background;
+    background: @background;
     border: 3px @outline solid;
 }
 
 tooltip label {
-    color: @on_backgroun;
+    color: @on_background;
+    padding: 4px;
 }
 
 @import "styles/clock.css";
@@ -36,3 +40,9 @@ tooltip label {
 @import "styles/workspaces.css";
 @import "styles/mpris.css";
 @import "styles/custom-sway-nc.css";
+@import "styles/tray.css";
+@import "styles/backlight.css";
+@import "styles/network.css";
+@import "styles/power-profiles-daemon.css";
+@import "styles/idle_inhibitor.css";
+@import "styles/pulseaudio.css";

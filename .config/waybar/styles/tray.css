@@ -1,0 +1,12 @@
+/*
+* Tray Module CSS
+*/
+
+#tray {
+    border: 3px @outline solid;
+    background: @background;
+    color: @on_background;
+    padding: 0px 8px;
+    border-radius: 999999px;
+    margin-right: 4px;
+}

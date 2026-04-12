@@ -1,0 +1,15 @@
+/*
+* Backlight Module CSS
+*/
+
+#backlight {
+    padding: 0px 8px;
+    border-top-right-radius: 999999px;
+    border-bottom-right-radius: 999999px;
+    border-top: 3px @outline solid;
+    border-bottom: 3px @outline solid;
+    border-right: 3px @outline solid;
+    background: @background;
+    color: @on_background;
+    margin-right: 4px;
+}

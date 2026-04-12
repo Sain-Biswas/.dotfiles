@@ -36,4 +36,4 @@ output_path = "~/.dotfiles/.config/waybar/modules/clock.jsonc"
 
 [templates.waybar]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
-output_path = "~/.dotfiles/.config/waybar/colors.css"
+output_path = "~/.dotfiles/.config/waybar/styles/colors.css"

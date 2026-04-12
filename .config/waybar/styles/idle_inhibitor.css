@@ -1,0 +1,19 @@
+/*
+* Idle Inhibitor Module CSS
+*/
+
+#idle_inhibitor {
+    border-top: 3px @outline solid;
+    border-bottom: 3px @outline solid;
+    padding: 0px 8px;
+}
+
+#idle_inhibitor.activated {
+    background: @error;
+    color: @on_error;
+}
+
+#idle_inhibitor.deactivated {
+    background: @background;
+    color: @on_background;
+}
