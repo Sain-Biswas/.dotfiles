@@ -1,0 +1,21 @@
+/**
+ *     ____   __  ____  __            ___  __   __ _  ____  __  ___
+ *    (  _ \ /  \(  __)(  )   ___    / __)/  \ (  ( \(  __)(  )/ __)
+ *     )   /(  O )) _)  )(   (___)  ( (__(  O )/    / ) _)  )(( (_ \
+ *    (__\_) \__/(__)  (__)          \___)\__/ \_)__)(__)  (__)\___/
+ */
+
+configuration {
+    font: "JetBrainsMono Nerd Font Propo 14";
+    show-icons: true;
+    terminal: "alacritty";
+
+    timeout {
+        action: "kb-cancel";
+        delay:  0;
+    }
+    filebrowser {
+        directories-first: true;
+        sorting-method:    "name";
+    }
+}

@@ -1,0 +1,201 @@
+#!/usr/bin/env bash
+
+# -----------------------------------------------------------------------------
+# Script: open-clipboard.sh
+#
+# Description:
+#   A Wayland-compatible clipboard manager UI using:
+#     - cliphist (clipboard history backend)
+#     - rofi     (interactive menu)
+#     - wl-copy  (clipboard setter)
+#
+#   Workflow:
+#     1. Fetch clipboard history via cliphist
+#     2. Generate preview entries with icons
+#     3. Display entries in a Rofi dmenu
+#     4. Allow user selection
+#     5. Copy selected entry back to clipboard
+#
+# Key Features:
+#   - Content-aware icon detection
+#   - Preview truncation for UI clarity
+#   - Strict error handling (fail-fast)
+#   - Dependency validation with notifications
+#
+# Requirements:
+#   - cliphist
+#   - rofi (Wayland-compatible build)
+#   - wl-copy (wl-clipboard)
+#   - notify-send (optional)
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Strict Mode
+# -----------------------------------------------------------------------------
+# -e  : exit on any command failure
+# -u  : error on undefined variables
+# -o pipefail : fail if any pipeline command fails
+set -euo pipefail
+
+# -----------------------------------------------------------------------------
+# Configuration
+# -----------------------------------------------------------------------------
+
+# Rofi UI
+ROFI_PROMPT="Clipboard"
+ROFI_LINES=15
+ROFI_WIDTH="50%"
+
+# Preview
+MAX_PREVIEW_LEN=80
+
+# Notifications
+NOTIFY_APP_NAME="clipboard_rofi_script"
+ICON_ERROR="dialog-error"
+
+# Icon mappings (freedesktop standard)
+ICON_TEXT="text-x-generic"
+ICON_URL="network-workgroup"
+ICON_IMAGE="image-x-generic"
+ICON_COMMAND="utilities-terminal"
+ICON_DEFAULT="edit-paste"
+
+# -----------------------------------------------------------------------------
+# Function: notify
+# -----------------------------------------------------------------------------
+notify() {
+    local urgency="$1"
+    local title="$2"
+    local message="$3"
+    local icon="${4:-dialog-information}"
+
+    if command -v notify-send >/dev/null 2>&1; then
+        notify-send -u "$urgency" -a "$NOTIFY_APP_NAME" -i "$icon" "$title" "$message"
+    else
+        echo "[$title] $message" >&2
+    fi
+}
+
+# -----------------------------------------------------------------------------
+# Function: require_command
+# -----------------------------------------------------------------------------
+require_command() {
+    local cmd="$1"
+    command -v "$cmd" >/dev/null 2>&1 || {
+        notify "critical" "Missing Dependency" "Command '$cmd' not found." "$ICON_ERROR"
+        exit 1
+    }
+}
+
+# Dependency checks
+require_command "cliphist"
+require_command "rofi"
+require_command "wl-copy"
+
+# -----------------------------------------------------------------------------
+# Function: truncate
+# -----------------------------------------------------------------------------
+truncate() {
+    local str="$1"
+    local max_len="$2"
+
+    if (( ${#str} > max_len )); then
+        printf "%s…\n" "${str:0:max_len}"
+    else
+        printf "%s\n" "$str"
+    fi
+}
+
+# -----------------------------------------------------------------------------
+# Function: detect_icon
+# -----------------------------------------------------------------------------
+detect_icon() {
+    local entry="$1"
+
+    if [[ "$entry" =~ ^https?:// ]]; then
+        echo "$ICON_URL"
+    elif [[ "$entry" =~ ^data:image ]]; then
+        echo "$ICON_IMAGE"
+    elif [[ "$entry" =~ ^(sudo|apt|dnf|pacman|git|cd|ls|rm|cp|mv) ]]; then
+        echo "$ICON_COMMAND"
+    elif [[ "$entry" =~ [[:print:]] ]]; then
+        echo "$ICON_TEXT"
+    else
+        echo "$ICON_DEFAULT"
+    fi
+}
+
+# -----------------------------------------------------------------------------
+# Function: format_entries
+# -----------------------------------------------------------------------------
+format_entries() {
+    cliphist list | while IFS= read -r line; do
+
+        # Decode safely (ignore binary/errors)
+        preview=$(cliphist decode "$line" 2>/dev/null | head -n1 || true)
+
+        preview=$(truncate "$preview" "$MAX_PREVIEW_LEN")
+        icon=$(detect_icon "$preview")
+
+        # Rofi extended format (text + icon metadata)
+        printf "%s\0icon\x1f%s\n" "$preview" "$icon"
+    done
+}
+
+# -----------------------------------------------------------------------------
+# Function: main
+# -----------------------------------------------------------------------------
+main() {
+    local selected index entry preview
+
+    # -------------------------------------------------------------------------
+    # Launch Rofi menu
+    # -------------------------------------------------------------------------
+    selected=$(format_entries | rofi \
+        -dmenu \
+        -p "$ROFI_PROMPT" \
+        -l "$ROFI_LINES" \
+        -show-icons \
+        -width "$ROFI_WIDTH" \
+        -theme "$HOME/.dotfiles/.config/rofi/launcher.rasi" \
+        -theme-str "entry { placeholder: 'Search clipboard history...'; }"
+    )
+
+    # User cancelled
+    [[ -z "$selected" ]] && exit 0
+
+    # -------------------------------------------------------------------------
+    # Resolve selection → cliphist index
+    # NOTE:
+    #   This is a linear search based on preview text.
+    #   Duplicate previews can cause incorrect matches.
+    # -------------------------------------------------------------------------
+    index=$(cliphist list | nl -w1 -s' ' | while read -r i line; do
+        preview=$(cliphist decode "$line" 2>/dev/null | head -n1 || true)
+        preview=$(truncate "$preview" "$MAX_PREVIEW_LEN")
+
+        if [[ "$preview" == "$selected" ]]; then
+            echo "$i"
+            break
+        fi
+    done)
+
+    [[ -z "$index" ]] && {
+        notify "critical" "Clipboard Error" "Failed to resolve selection." "$ICON_ERROR"
+        exit 2
+    }
+
+    # Retrieve actual entry
+    entry=$(cliphist list | sed -n "${index}p")
+
+    # Copy back to clipboard
+    if ! cliphist decode "$entry" | wl-copy; then
+        notify "critical" "Clipboard Error" "Failed to copy selection." "$ICON_ERROR"
+        exit 2
+    fi
+}
+
+# -----------------------------------------------------------------------------
+# Entry Point
+# -----------------------------------------------------------------------------
+main "$@"

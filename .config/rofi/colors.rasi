@@ -1,0 +1,61 @@
+/**
+ *     _  _   __  ____  _  _   ___  ____  __ _           ____   __   ____  __
+ *    ( \/ ) / _\(_  _)/ )( \ / __)(  __)(  ( \   ___   (  _ \ / _\ / ___)(  )
+ *    / \/ \/    \ )(  ) \/ (( (_ \ ) _) /    /  (___)   )   //    \___ \ )(
+ *    \_)(_/\_/\_/(__) \____/ \___/(____)\_)__)         (__\_)\_/\_/(____/(__)
+ */
+
+* {
+    primary: rgba(158, 213, 146, 1);
+    primary-fixed: rgba(185, 241, 172, 1);
+    primary-fixed-dim: rgba(158, 213, 146, 1);
+    on-primary: rgba(5, 57, 8, 1);
+    on-primary-fixed: rgba(0, 34, 2, 1);
+    on-primary-fixed-variant: rgba(32, 81, 29, 1);
+    primary-container: rgba(32, 81, 29, 1);
+    on-primary-container: rgba(185, 241, 172, 1);
+
+    secondary: rgba(237, 184, 204, 1);
+    secondary-fixed: rgba(255, 216, 230, 1);
+    secondary-fixed-dim: rgba(237, 184, 204, 1);
+    on-secondary: rgba(73, 37, 53, 1);
+    on-secondary-fixed: rgba(48, 17, 32, 1);
+    on-secondary-fixed-variant: rgba(98, 59, 76, 1);
+    secondary-container: rgba(98, 59, 76, 1);
+    on-secondary-container: rgba(255, 216, 230, 1);
+
+    tertiary: rgba(188, 195, 250, 1);
+    tertiary-fixed: rgba(222, 224, 255, 1);
+    tertiary-fixed-dim: rgba(188, 195, 250, 1);
+    on-tertiary: rgba(37, 45, 90, 1);
+    on-tertiary-fixed: rgba(15, 23, 68, 1);
+    on-tertiary-fixed-variant: rgba(60, 67, 114, 1);
+    tertiary-container: rgba(60, 67, 114, 1);
+    on-tertiary-container: rgba(222, 224, 255, 1);
+
+    error: rgba(255, 180, 171, 1);
+    on-error: rgba(105, 0, 5, 1);
+    error-container: rgba(147, 0, 10, 1);
+    on-error-container: rgba(255, 218, 214, 1);
+
+    surface: rgba(18, 19, 26, 0.5);
+    on-surface: rgba(227, 225, 236, 1);
+    on-surface-variant: rgba(197, 197, 214, 1);
+
+    outline: rgba(143, 143, 159, 1);
+    outline-variant: rgba(68, 70, 84, 1);
+    shadow: rgba(0, 0, 0, 1);
+
+    scrim: rgba(0, 0, 0, 1);
+    inverse-surface: rgba(227, 225, 236, 1);
+    inverse-on-surface: rgba(47, 48, 56, 1);
+    inverse-primary: rgba(56, 105, 51, 1);
+
+    surface-dim: rgba(18, 19, 26, 1);
+    surface-bright: rgba(56, 57, 65, 1);
+    surface-container-lowest: rgba(13, 14, 21, 1);
+    surface-container-low: rgba(26, 27, 35, 1);
+    surface-container: rgba(30, 31, 39, 1);
+    surface-container-high: rgba(41, 41, 49, 1);
+    surface-container-highest: rgba(52, 52, 60, 1);
+}
