@@ -10,6 +10,12 @@ input_path = "~/.dotfiles/.config/matugen/configuration/matugen-alacritty.toml"
 output_path = "~/.dotfiles/.config/alacritty/themes/matugen.toml"
 
 
+# Btop
+[templates.btop]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-btop.theme"
+output_path = "~/.dotfiles/.config/btop/themes/matugen.theme"
+
+
 # Ghostty
 [templates.ghostty]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-ghostty"
