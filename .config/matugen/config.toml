@@ -37,3 +37,13 @@ output_path = "~/.dotfiles/.config/waybar/modules/clock.jsonc"
 [templates.waybar]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
 output_path = "~/.dotfiles/.config/waybar/styles/colors.css"
+
+
+# GTK Applicatoin Theming
+[templates.gtk3]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-gtk3.css"
+output_path = "~/.dotfiles/.config/gtk-3.0/gtk.css"
+
+[templates.gtk4]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-gtk4.css"
+output_path = "~/.dotfiles/.config/gtk-4.0/gtk.css"
