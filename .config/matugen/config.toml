@@ -51,6 +51,12 @@ input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
 output_path = "~/.dotfiles/.config/waybar/styles/colors.css"
 
 
+# Sway NC
+[templates.swaync]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
+output_path = "~/.dotfiles/.config/swaync/styles/colors.css"
+
+
 # GTK Applicatoin Theming
 [templates.gtk3]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-gtk3.css"
