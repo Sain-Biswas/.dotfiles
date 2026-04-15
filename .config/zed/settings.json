@@ -33,10 +33,10 @@
   },
 
   "ui_font_size": 16,
-  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_family": "Rec Mono Duotone",
 
   "buffer_font_size": 16,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "Rec Mono Duotone",
 
   "autosave": "on_focus_change",
   "show_whitespaces": "all",
