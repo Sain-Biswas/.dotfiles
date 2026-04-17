@@ -5,11 +5,11 @@ live_config_reload = true
 [window]
 padding = { x = 10, y = 10 }
 decorations = "None"
-opacity = 0.8
+opacity = 0.70
 decorations_theme_variant = "Dark"
 
 [font]
-size = 16
+size = 14
 normal = { family = "JetBrainsMono Nerd Font Propo" }
 
 [cursor]
