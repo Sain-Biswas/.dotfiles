@@ -1,0 +1,21 @@
+/**
+ *     ____  _  _   __   _  _  __ _   ___           ____  __ _  ____
+ *    / ___)/ )( \ / _\ ( \/ )(  ( \ / __)   ___   (    \(  ( \(    \
+ *    \___ \\ /\ //    \ )  / /    /( (__   (___)   ) D (/    / ) D (
+ *    (____/(_/\_)\_/\_/(__/  \_)__) \___)         (____/\_)__)(____/
+ */
+
+.widget-dnd label {
+    color: var(--text-color);
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.widget-dnd switch {
+    border-radius: var(--border-radius);
+    margin-left: 8px;
+}
+
+.widget-dnd switch slider {
+    border-radius: var(--border-radius);
+}

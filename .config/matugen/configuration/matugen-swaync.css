@@ -1,0 +1,37 @@
+
+:root {
+    --background: {{ colors.surface.default.rgba | set_alpha: 0.70 }};
+    --text-color: {{ colors.on_surface.default.rgba }};
+    --text-color-disabled: {{ colors.on_surface_variant.default.rgba }};
+
+    --noti-border-color: {{ colors.outline.default.rgba }};
+
+    --noti-close-bg: {{ colors.error.default.rgba }};
+    --noti-close-bg-text: {{ colors.on_error.default.rgba }};
+    --noti-close-bg-hover: {{ colors.error_container.default.rgba }};
+    --noti-close-bg-hover-text: {{ colors.on_error_container.default.rgba }};
+
+    --noti-bg: {{ colors.surface_container.default.rgba | set_alpha: 0.70 }};
+    --noti-bg-opaque: {{ colors.surface_container.default.rgba }};
+    --noti-bg-darker: {{ colors.surface_container_lowest.default.rgba }};
+    --noti-bg-hover: {{ colors.surface_container_high.default.rgba }};
+    --noti-bg-focus: {{ colors.surface_container_highest.default.rgba | set_alpha: 0.70 }};
+
+    --bg-selected: {{ colors.primary.default.rgba }};
+    --notification-shadow:
+        0 0 0 1px {{colors.shadow.default.rgba | set_alpha: 0.3}}, 0 1px 3px 1px {{colors.shadow.default.rgba | set_alpha: 0.7}},
+        0 2px 6px 2px {{colors.shadow.default.rgba | set_alpha: 0.3}};
+
+
+    --notification-icon-size: 64px;
+    --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
+    --notification-group-icon-size: 32px;
+    --border-radius: 8px;
+    --font-size-body: 16px;
+    --font-size-summary: 18px;
+    --hover-tranistion: background 0.15s ease-in-out;
+    --hover-transition: var(--hover-tranistion);
+    --group-collapse-tranistion: opacity 400ms ease-in-out;
+    --group-collapse-transition: var(--group-collapse-tranistion);
+    --border: 3px solid var(--noti-border-color);
+}

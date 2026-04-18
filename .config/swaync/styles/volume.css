@@ -1,0 +1,27 @@
+/**
+ *     ____  _  _   __   _  _  __ _   ___           _  _   __   __    _  _  _  _  ____
+ *    / ___)/ )( \ / _\ ( \/ )(  ( \ / __)   ___   / )( \ /  \ (  )  / )( \( \/ )(  __)
+ *    \___ \\ /\ //    \ )  / /    /( (__   (___)  \ \/ /(  O )/ (_/\) \/ (/ \/ \ ) _)
+ *    (____/(_/\_)\_/\_/(__/  \_)__) \___)          \__/  \__/ \____/\____/\_)(_/(____)
+ */
+
+:root {
+    --widget-volume-row-icon-size: 24px;
+}
+
+/* Each row app icon */
+.widget-volume row image {
+    -gtk-icon-size: var(--widget-volume-row-icon-size);
+}
+
+.per-app-volume {
+    background-color: var(--noti-bg-alt);
+    margin: 8px;
+    margin-bottom: 0;
+    border-radius: var(--border-radius);
+}
+
+/* Slider widget */
+.widget-slider label {
+    font-size: inherit;
+}

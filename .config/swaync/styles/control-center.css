@@ -1,0 +1,40 @@
+/**
+ *     ____  _  _   __   _  _  __ _   ___            ___  __   __ _  ____  ____   __   __       ___  ____  __ _  ____  ____  ____
+ *    / ___)/ )( \ / _\ ( \/ )(  ( \ / __)   ___    / __)/  \ (  ( \(_  _)(  _ \ /  \ (  )     / __)(  __)(  ( \(_  _)(  __)(  _ \
+ *    \___ \\ /\ //    \ )  / /    /( (__   (___)  ( (__(  O )/    /  )(   )   /(  O )/ (_/\  ( (__  ) _) /    /  )(   ) _)  )   /
+ *    (____/(_/\_)\_/\_/(__/  \_)__) \___)          \___)\__/ \_)__) (__) (__\_) \__/ \____/   \___)(____)\_)__) (__) (____)(__\_)
+ */
+
+.control-center {
+    /* The Control Center which contains the old notifications + widgets */
+    background: var(--background);
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+}
+
+.control-center .control-center-list-placeholder {
+    /* The placeholder when there are no notifications */
+    opacity: 1;
+}
+
+.control-center .control-center-list {
+    /* List of notifications */
+    background: transparent;
+}
+
+.control-center .control-center-list .notification {
+    box-shadow: var(--notification-shadow);
+}
+
+.control-center .control-center-list .notification .notification-default-action,
+.control-center .control-center-list .notification .notification-action {
+    transition: var(--group-collapse-tranistion), var(--hover-tranistion);
+}
+
+.control-center
+    .control-center-list
+    .notification
+    .notification-default-action:hover,
+.control-center .control-center-list .notification .notification-action:hover {
+    background-color: var(--noti-bg-hover);
+}

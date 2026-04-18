@@ -21,13 +21,16 @@ output_path = "~/.dotfiles/.config/btop/themes/matugen.theme"
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-rofi.rasi"
 output_path = "~/.dotfiles/.config/rofi/colors.rasi"
 
+# Starship
+[templates.starship]
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-starship.toml"
+output_path = "~/.dotfiles/.config/starship.toml"
+
 
 # Ghostty
 [templates.ghostty]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-ghostty"
 output_path = "~/.dotfiles/.config/ghostty/themes/Matugen"
-post_hook = "pkill -SIGUSR2 ghostty"
-
 
 # Zed Editor
 [templates.zed]
@@ -49,13 +52,14 @@ output_path = "~/.dotfiles/.config/waybar/modules/clock.jsonc"
 [templates.waybar]
 input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
 output_path = "~/.dotfiles/.config/waybar/styles/colors.css"
+post_hook = "pkill -SIGUSR2 waybar"
 
 
 # Sway NC
 [templates.swaync]
-input_path = "~/.dotfiles/.config/matugen/configuration/matugen-colors.css"
+input_path = "~/.dotfiles/.config/matugen/configuration/matugen-swaync.css"
 output_path = "~/.dotfiles/.config/swaync/styles/colors.css"
-
+post_hook = "swaync-client -R -rs"
 
 # GTK Applicatoin Theming
 [templates.gtk3]
