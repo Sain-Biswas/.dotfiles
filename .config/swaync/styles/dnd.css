@@ -16,6 +16,10 @@
     margin-left: 8px;
 }
 
+.widget-dnd switch:checked {
+    background-color: var(--bg-selected);
+}
+
 .widget-dnd switch slider {
     border-radius: var(--border-radius);
 }

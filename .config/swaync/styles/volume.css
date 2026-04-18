@@ -25,3 +25,7 @@
 .widget-slider label {
     font-size: inherit;
 }
+
+.widget-volume highlight {
+    background: var(--bg-selected);
+}
