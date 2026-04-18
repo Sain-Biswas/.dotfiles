@@ -20,10 +20,10 @@
       "weeks-pos": "left",
 
       "format": {
-        "months": "<span color='#9ed592'><b>{}</b></span>",
-        "days": "<span color='#e3e1ec'><b>{}</b></span>",
-        "weeks": "<span color='#edb8cc'><b>W{}</b></span>",
-        "weekdays": "<span color='#bcc3fa'><b>{}</b></span>",
+        "months": "<span color='#fbba65'><b>{}</b></span>",
+        "days": "<span color='#dae4e5'><b>{}</b></span>",
+        "weeks": "<span color='#c2c4eb'><b>W{}</b></span>",
+        "weekdays": "<span color='#8dd2db'><b>{}</b></span>",
         "today": "<span color='#ffb4ab'><b><u>{}</u></b></span>",
       },
     },
