@@ -3,6 +3,9 @@
 #    ( (__(  O )/ \/ \/ \/ \(  O )/    /   ) _) /    /\ \/ / )(  )   /(  O )/    // \/ \ ) _) /    /  )(
 #     \___)\__/ \_)(_/\_)(_/ \__/ \_)__)  (____)\_)__) \__/ (__)(__\_) \__/ \_)__)\_)(_/(____)\_)__) (__)
 
-
+# cursor settings
 export XCURSOR_SIZE=24
 export XCURSOR_THEME=Bibata-Modern-Ice
+
+# set location of zsh configuration
+export ZDOTDIR=$HOME/.dotfiles/zsh
