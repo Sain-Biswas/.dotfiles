@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # =============================================================================
-# Script: open-rofi.sh
+# Script: utility-rofi
 # =============================================================================
 #
 # Description:
@@ -16,7 +16,7 @@
 #   - Dependency validation
 #
 # Usage:
-#   ./open-rofi.sh <command> [--debug]
+#   ./utility-rofi <command> [--debug]
 #
 # Commands:
 #   app        Launch application launcher
